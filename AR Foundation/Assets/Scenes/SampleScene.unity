@@ -312,7 +312,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2512387470528047737, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
   m_PrefabInstance: {fileID: 331264285}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1541736845}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
@@ -529,6 +529,9 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 1030969179}
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541736850}
     - targetCorrespondingSourceObject: {fileID: 2512387469002778309, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1065779188}
@@ -4388,6 +4391,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1520419809}
   m_CullTransparentMesh: 1
+--- !u!1 &1541736845 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 331264285}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1541736850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541736845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.ARFoundation::UnityEngine.XR.ARFoundation.ARTrackedImageManager
+  <trackablesChanged>k__BackingField:
+    m_PersistentCalls:
+      m_Calls: []
+  m_SerializedLibrary: {fileID: 11400000, guid: 487441b65d251644b90d40f6e044b70f, type: 2}
+  m_MaxNumberOfMovingImages: 1
+  m_TrackedImagePrefab: {fileID: 1000111747044350283, guid: 8db0c4019b41a1a4490b83d820aa8728, type: 3}
 --- !u!1 &1542672740
 GameObject:
   m_ObjectHideFlags: 0

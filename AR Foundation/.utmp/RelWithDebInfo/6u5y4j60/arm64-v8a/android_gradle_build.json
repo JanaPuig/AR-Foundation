@@ -1,0 +1,39 @@
+{
+  "buildFiles": [
+    "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\CMakeLists.txt",
+    "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\src\\main\\cpp\\GameActivity\\CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "B:\\Unity\\UnityInstalls\\6000.4.9f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+      "-C",
+      "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\.utmp\\RelWithDebInfo\\6u5y4j60\\arm64-v8a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "B:\\Unity\\UnityInstalls\\6000.4.9f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\SDK\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-C",
+    "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\.utmp\\RelWithDebInfo\\6u5y4j60\\arm64-v8a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {
+    "game::@d02bb112ea9f9c2ed29f": {
+      "toolchain": "toolchain",
+      "abi": "arm64-v8a",
+      "artifactName": "game",
+      "output": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\cxx\\RelWithDebInfo\\6u5y4j60\\obj\\arm64-v8a\\libgame.so",
+      "runtimeFiles": []
+    }
+  },
+  "toolchains": {
+    "toolchain": {
+      "cCompilerExecutable": "B:\\Unity\\UnityInstalls\\6000.4.9f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
+      "cppCompilerExecutable": "B:\\Unity\\UnityInstalls\\6000.4.9f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\NDK\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

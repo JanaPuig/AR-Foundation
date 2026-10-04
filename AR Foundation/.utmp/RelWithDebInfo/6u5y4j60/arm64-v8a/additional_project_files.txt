@@ -1,0 +1,17 @@
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\GAToUnityCallbacks.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroEnd.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroHeaderBegin.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\MacroSourceBegin.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAApplication.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAConfiguration.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGADebug.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAEvents.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAInput.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboard.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGASoftKeyboardCallbacks.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGATypes.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UGAVersion.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGACallbacks.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAConfigurationCallbacks.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAKeyEventCallbacks.h
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\UnityToGAMotionEventCallbacks.h

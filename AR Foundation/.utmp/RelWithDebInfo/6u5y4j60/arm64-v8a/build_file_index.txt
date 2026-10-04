@@ -1,0 +1,2 @@
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\CMakeLists.txt
+B:\Clase\4rt\vr\AR-Foundation\AR Foundation\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\cpp\GameActivity\CMakeLists.txt

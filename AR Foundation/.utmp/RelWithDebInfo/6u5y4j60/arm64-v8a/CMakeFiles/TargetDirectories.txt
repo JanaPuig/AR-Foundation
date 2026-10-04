@@ -1,0 +1,5 @@
+B:/Clase/4rt/vr/AR-Foundation/AR Foundation/.utmp/RelWithDebInfo/6u5y4j60/arm64-v8a/CMakeFiles/edit_cache.dir
+B:/Clase/4rt/vr/AR-Foundation/AR Foundation/.utmp/RelWithDebInfo/6u5y4j60/arm64-v8a/CMakeFiles/rebuild_cache.dir
+B:/Clase/4rt/vr/AR-Foundation/AR Foundation/.utmp/RelWithDebInfo/6u5y4j60/arm64-v8a/GameActivity/CMakeFiles/game.dir
+B:/Clase/4rt/vr/AR-Foundation/AR Foundation/.utmp/RelWithDebInfo/6u5y4j60/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+B:/Clase/4rt/vr/AR-Foundation/AR Foundation/.utmp/RelWithDebInfo/6u5y4j60/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
