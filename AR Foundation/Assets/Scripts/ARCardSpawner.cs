@@ -1,7 +1,10 @@
+using JetBrains.Annotations;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using static SerializableCallback.Arg;
+using System;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
 public class ARCardSpawner : MonoBehaviour
@@ -12,6 +15,10 @@ public class ARCardSpawner : MonoBehaviour
         public string imageName;
         public GameObject prefabToSpawn;
     }
+
+    //Pasar tipo de monstruo al script que controle el combate
+    public string MonsterType;
+    public static event Action<string> OnMonsterTypeChanged;
 
     [Header("Asocia cada carta con su bicho")]
     public List<CardPrefabPair> cardPrefabs;
@@ -68,11 +75,14 @@ public class ARCardSpawner : MonoBehaviour
 
         if (prefabDictionary.ContainsKey(imageName))
         {
+            Debug.Log("Carta: " + imageName);
+            SendCardType(imageName);
             if (!spawnedObjects.ContainsKey(imageName))
             {
                 GameObject prefab = prefabDictionary[imageName];
                 GameObject newPrefab = Instantiate(prefab, trackedImage.transform.position, trackedImage.transform.rotation);
                 spawnedObjects.Add(imageName, newPrefab);
+                Debug.Log("Carta2: " + imageName);
             }
             else
             {
@@ -80,7 +90,14 @@ public class ARCardSpawner : MonoBehaviour
                 spawnedObj.transform.position = trackedImage.transform.position;
                 spawnedObj.transform.rotation = trackedImage.transform.rotation;
                 spawnedObj.SetActive(isTracking);
+                Debug.Log("Carta3: " + imageName);
             }
         }
+    }
+
+    void SendCardType(string cardtype)
+    {
+       MonsterType = cardtype;
+       OnMonsterTypeChanged?.Invoke(cardtype);
     }
 }

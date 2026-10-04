@@ -3,7 +3,15 @@
   "WorkspaceRootPath": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\assets and prefabs\\trackedimages\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\assets and prefabs\\trackedimages\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -27,6 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ARCardSpawner.cs",
+              "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ARCardSpawner.cs",
+              "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ARCardSpawner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:28:48.565Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ARCardSpawner.cs",
+              "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
+              "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
+              "RelativeToolTip": "Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwEQAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-04T19:00:21.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "CardLimitController.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CardLimitController.cs",
@@ -34,8 +68,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CardLimitController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T21:20:18.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-01T21:20:18.069Z"
             }
           ]
         }

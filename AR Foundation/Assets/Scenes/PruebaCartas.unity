@@ -723,6 +723,7 @@ GameObject:
   - component: {fileID: 1940029103}
   - component: {fileID: 1940029102}
   - component: {fileID: 1940029108}
+  - component: {fileID: 1940029109}
   m_Layer: 0
   m_Name: XR Origin (Mobile AR)
   m_TagString: Untagged
@@ -840,17 +841,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c516e95104c11de40be27fe8a1dd3fe6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ARCardSpawner
+  MonsterType: 
   cardPrefabs:
-  - imageName: carta
+  - imageName: Agua
     prefabToSpawn: {fileID: 6615031470456441530, guid: b5bd8c1512b694b49bb6805c18c206ef, type: 3}
-  - imageName: carta 2
+  - imageName: Electrico
     prefabToSpawn: {fileID: 6138138810621087015, guid: 180881cb72f251c47a1b52bf63e07e5c, type: 3}
-  - imageName: carta 3
+  - imageName: Volador
     prefabToSpawn: {fileID: 1000111747044350283, guid: 8db0c4019b41a1a4490b83d820aa8728, type: 3}
-  - imageName: carta 4
+  - imageName: Planta
     prefabToSpawn: {fileID: 5507953670631434824, guid: 6d69c2e96134d064abfc086666b87a2b, type: 3}
-  - imageName: carta 5
+  - imageName: Fuego
     prefabToSpawn: {fileID: 4076361501917307464, guid: 81a8f60a57a40cd46a3434af9f8da1c6, type: 3}
+--- !u!114 &1940029109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1940029101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e075db177bd744ab29ebcf8572757e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PruebaRecibirTipoMonstruo
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

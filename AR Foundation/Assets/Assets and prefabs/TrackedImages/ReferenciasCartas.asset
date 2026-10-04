@@ -25,7 +25,7 @@ MonoBehaviour:
       m_GuidHigh: 12116980171423312648
     m_Size: {x: 0.056, y: 0.079408005}
     m_SpecifySize: 1
-    m_Name: carta
+    m_Name: Agua
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 4636687944887691911
@@ -35,7 +35,7 @@ MonoBehaviour:
       m_GuidHigh: 1710847584464391304
     m_Size: {x: 0.56, y: 0.8146526}
     m_SpecifySize: 1
-    m_Name: carta 2
+    m_Name: Electrico
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5048236653928286049
@@ -45,7 +45,7 @@ MonoBehaviour:
       m_GuidHigh: 2469266322817444616
     m_Size: {x: 0.56, y: 0.83053434}
     m_SpecifySize: 1
-    m_Name: carta 3
+    m_Name: Volador
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 5221397411377699095
@@ -55,7 +55,7 @@ MonoBehaviour:
       m_GuidHigh: 5471740248235786568
     m_Size: {x: 0.056, y: 0.0784107}
     m_SpecifySize: 1
-    m_Name: carta 4
+    m_Name: Planta
     m_Texture: {fileID: 0}
   - m_SerializedGuid:
       m_GuidLow: 4864829043507597813
@@ -65,5 +65,5 @@ MonoBehaviour:
       m_GuidHigh: 11188285246195346331
     m_Size: {x: 0.056, y: 0.07972968}
     m_SpecifySize: 1
-    m_Name: carta 5
+    m_Name: Fuego
     m_Texture: {fileID: 0}
