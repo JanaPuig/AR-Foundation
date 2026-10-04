@@ -20,11 +20,11 @@ public enum RoundResult
 }
 
 
+
+
+
+
 // Sistema de tipos: cada tipo gana a 2 y pierde contra 2
-
-
-
-
 public static class ElementSystem
 {
     // Clave = tipo atacante, valor = los 2 tipos a los que gana.
