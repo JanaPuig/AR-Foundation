@@ -18,12 +18,52 @@ MonoBehaviour:
     m_Storage: []
   m_Images:
   - m_SerializedGuid:
-      m_GuidLow: 4984995632620744985
-      m_GuidHigh: 6180871346114382500
+      m_GuidLow: 5008393885428088815
+      m_GuidHigh: 5700751450180691370
     m_SerializedTextureGuid:
-      m_GuidLow: 7436612783841758291
-      m_GuidHigh: 7824552458967958760
-    m_Size: {x: 0.056, y: 0.08937286}
+      m_GuidLow: 4067878601710146235
+      m_GuidHigh: 12116980171423312648
+    m_Size: {x: 0.056, y: 0.079408005}
     m_SpecifySize: 1
-    m_Name: carta1
+    m_Name: carta
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4636687944887691911
+      m_GuidHigh: 365044532818206649
+    m_SerializedTextureGuid:
+      m_GuidLow: 13057113162315589614
+      m_GuidHigh: 1710847584464391304
+    m_Size: {x: 0.56, y: 0.8146526}
+    m_SpecifySize: 1
+    m_Name: carta 2
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5048236653928286049
+      m_GuidHigh: 11902921558797496225
+    m_SerializedTextureGuid:
+      m_GuidLow: 7089903510813353316
+      m_GuidHigh: 2469266322817444616
+    m_Size: {x: 0.56, y: 0.83053434}
+    m_SpecifySize: 1
+    m_Name: carta 3
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 5221397411377699095
+      m_GuidHigh: 12865431722354231696
+    m_SerializedTextureGuid:
+      m_GuidLow: 3788672990215959272
+      m_GuidHigh: 5471740248235786568
+    m_Size: {x: 0.056, y: 0.0784107}
+    m_SpecifySize: 1
+    m_Name: carta 4
+    m_Texture: {fileID: 0}
+  - m_SerializedGuid:
+      m_GuidLow: 4864829043507597813
+      m_GuidHigh: 16249805338208965271
+    m_SerializedTextureGuid:
+      m_GuidLow: 1131763829667290554
+      m_GuidHigh: 11188285246195346331
+    m_Size: {x: 0.056, y: 0.07972968}
+    m_SpecifySize: 1
+    m_Name: carta 5
     m_Texture: {fileID: 0}
