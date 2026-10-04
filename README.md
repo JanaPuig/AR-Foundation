@@ -19,7 +19,7 @@ Cada tipo gana y pierde contra 2 tipos diferentes, como en piedra, papel, tijera
 | Monstruo | Tipo | Representado|
 | ------------- | ------------- |  ------------- |
 | Cactoro  | Planta  | Papel |
-| Tribal  | Content Cell  | Tijera |
+| Tribal  |  Fuego  | Tijera |
 | Fish  | Agua  | Piedra |
 | Frog  | Eléctrico | Lagarto |
 | Armabee  | Volador| Spok |
