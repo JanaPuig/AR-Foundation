@@ -223,7 +223,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -230.18951, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -253,7 +253,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -450, y: -191.85587}
+  m_AnchoredPosition: {x: -367.2, y: 205}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &702413256
@@ -345,14 +345,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02efad5179d94f4d9753918fe3974ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
+  rondaActual: 1
+  nombreEscenaInicio: PantallaInicio
   playerSpawnPoint: {fileID: 0}
   enemySpawnPoint: {fileID: 0}
   textoResultado: {fileID: 482616704}
-  cactoroPrefab: {fileID: 919132149155446097, guid: 94c3ebb342930f349bb1adaa8e6aec86, type: 3}
-  tribalPrefab: {fileID: 919132149155446097, guid: c060c2be1e08ee24aafc354d3634f9af, type: 3}
-  fishPrefab: {fileID: 919132149155446097, guid: 024aa64e2ca54ad41a0a440d1a4c5797, type: 3}
-  frogPrefab: {fileID: 919132149155446097, guid: 557bb045b0b3eef4aa9f48931875cc7a, type: 3}
-  armabeePrefab: {fileID: 919132149155446097, guid: f0fdbeac7a6dfb54a87d32e9ac0a1f88, type: 3}
+  cactoroPrefab: {fileID: 5507953670631434824, guid: 6d69c2e96134d064abfc086666b87a2b, type: 3}
+  tribalPrefab: {fileID: 4076361501917307464, guid: 81a8f60a57a40cd46a3434af9f8da1c6, type: 3}
+  fishPrefab: {fileID: 6615031470456441530, guid: b5bd8c1512b694b49bb6805c18c206ef, type: 3}
+  frogPrefab: {fileID: 6138138810621087015, guid: 180881cb72f251c47a1b52bf63e07e5c, type: 3}
+  armabeePrefab: {fileID: 1000111747044350283, guid: 8db0c4019b41a1a4490b83d820aa8728, type: 3}
+  cartaFisicaPrefab: {fileID: 4306966123445654731, guid: 90751cd57d6325643b0ba878c0ae982b, type: 3}
+  imagenCactoro: {fileID: 2800000, guid: e7f072e81202349448414de7c386ef4b, type: 3}
+  imagenTribal: {fileID: 2800000, guid: ecf45dbad5340fb49bab374127c6449b, type: 3}
+  imagenFish: {fileID: 2800000, guid: 245892bb02093874086b2374442928a8, type: 3}
+  imagenFrog: {fileID: 2800000, guid: d7e5e7ee2f3db53488ccd548d026be17, type: 3}
+  imagenArmabee: {fileID: 2800000, guid: ddd3256465ad6264086b5e4ba3984422, type: 3}
   isRoundActive: 0
 --- !u!4 &811922115
 Transform:

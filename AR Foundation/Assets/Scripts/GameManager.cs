@@ -1,10 +1,15 @@
 using UnityEngine;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
+
+    [Header("Lógica juego")]
+    public int rondaActual = 1;
+    public string nombreEscenaInicio = "PantallaInicio";
 
     [Header("Puntos de Spawn por Defecto")] // De moemnto no hace falta
     public Transform playerSpawnPoint;
@@ -38,7 +43,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        if (textoResultado != null) textoResultado.text = "Escanea una carta o pulsa 1-5";
+        if (textoResultado != null) textoResultado.text = "Escanea una carta";
     }
 
     void Update()
@@ -69,7 +74,7 @@ public class GameManager : MonoBehaviour
     {
         isRoundActive = true;
 
-        if (textoResultado != null) textoResultado.text = "¡Rival Invocado!...";
+        if (textoResultado != null) textoResultado.text = $"[Ronda {rondaActual}] ¡Rival Invocado!...";
 
         MonsterType enemyType = (MonsterType)Random.Range(0, 5);
         StartCoroutine(EnemyTurnAndResolve(playerType, enemyType));
@@ -149,25 +154,53 @@ public class GameManager : MonoBehaviour
             {
                 textoResultado.text = "<color=green>¡VICTORIA!</color>";
                 yield return new WaitForSeconds(3.0f);
+
+                rondaActual++;
+                textoResultado.text = $"<color=yellow>¡Avanzas a la Ronda {rondaActual}!</color>";
+                yield return new WaitForSeconds(2.0f);
+
+                ActualizarTextoRonda("Escanea tu siguiente carta...");
+                ClearPreviousRound();
+                isRoundActive = false;
             }
             else if (result == RoundResult.Lose)
             {
-                textoResultado.text = "<color=red>¡DERROTA!</color>";
+                int rondasSuperadas = rondaActual - 1;
+                textoResultado.text = $"<color=red>¡GAME OVER!</color>\nHas superado {rondasSuperadas} rondas consecutivas.";
+                yield return new WaitForSeconds(5.0f);
+
+                textoResultado.text = "Volviendo a la pantalla de inicio...";
                 yield return new WaitForSeconds(3.0f);
+                VolverAlInicio();
             }
             else
             {
-                textoResultado.text = "<color=yellow>¡EMPATE!</color>";
+                textoResultado.text = "<color=yellow>¡EMPATE!</color>\nInténtalo de nuevo.";
                 yield return new WaitForSeconds(3.0f);
+                ActualizarTextoRonda("Vuelve a escanear tu carta...");
+                ClearPreviousRound();
+                isRoundActive = false;
             }
 
-            textoResultado.text = "Pon otra carta o pulsa tecla...";
         }
 
-        ClearPreviousRound();
-        isRoundActive = false;
+        //ClearPreviousRound();
+        //isRoundActive = false;
     }
 
+    private void VolverAlInicio()
+    {
+        ClearPreviousRound();
+        rondaActual = 1;
+        isRoundActive = false;
+        ActualizarTextoRonda("Escanea una carta");
+    }
+
+    private void ActualizarTextoRonda(string mensajeExtra)
+    {
+        if (textoResultado != null)
+            textoResultado.text = $"<b>[RONDA {rondaActual}]</b>\n{mensajeExtra}";
+    }
     private GameObject SpawnMonster(MonsterType type, Transform spawnPoint)
     {
         GameObject prefab = ObtenerPrefabPorTipo(type);
