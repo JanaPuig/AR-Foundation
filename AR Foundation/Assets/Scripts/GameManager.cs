@@ -104,6 +104,11 @@ public class GameManager : MonoBehaviour
         currentEnemyMonster = Instantiate(ObtenerPrefabPorTipo(enemyType), spawnPosition, spawnRotation);
         Debug.Log($"Enemigo maquina: {enemyType}");
 
+        if (currentEnemyMonster != null && currentPlayerMonster != null)
+        {
+            currentEnemyMonster.transform.localScale = currentPlayerMonster.transform.localScale; //Para que sean del mismo tamaño
+        }
+
         yield return new WaitForSeconds(1.5f);
 
         RoundResult result = CombatRules.Evaluate(playerType, enemyType);
