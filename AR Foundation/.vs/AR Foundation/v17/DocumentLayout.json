@@ -1,22 +1,29 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\",
+  "WorkspaceRootPath": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\pruebarecibirtipomonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pruebarecibirtipomonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\assets and prefabs\\trackedimages\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\assets and prefabs\\trackedimages\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CombatSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CombatSystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\CardLimitController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,23 +33,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CombatSystem.cs",
+              "DocumentMoniker": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CombatSystem.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CombatSystem.cs",
+              "ToolTip": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CombatSystem.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CombatSystem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T10:31:01.735Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T10:28:41.765Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PruebaRecibirTipoMonstruo.cs",
-              "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
+              "DocumentMoniker": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
-              "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
+              "ToolTip": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
               "RelativeToolTip": "Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -51,36 +76,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ARCardSpawner.cs",
-              "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ARCardSpawner.cs",
-              "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
+              "ToolTip": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\ARCardSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAAIIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-04T19:28:48.565Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "ARCardSpawner.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
-              "RelativeDocumentMoniker": "Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
-              "RelativeToolTip": "Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAcwEQAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-04T19:00:21.142Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "CardLimitController.cs",
-              "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
+              "DocumentMoniker": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CardLimitController.cs",
-              "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
+              "ToolTip": "C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
               "RelativeToolTip": "Assets\\Scripts\\CardLimitController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

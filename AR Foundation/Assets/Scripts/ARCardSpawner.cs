@@ -25,7 +25,9 @@ public class ARCardSpawner : MonoBehaviour
     private Dictionary<string, GameObject> prefabDictionary;
     private Dictionary<string, GameObject> spawnedObjects = new Dictionary<string, GameObject>();
 
-    void Awake()
+    private bool combateIniciadoParaEstaCarta = false;
+
+void Awake()
     {
         trackedImageManager = GetComponent<ARTrackedImageManager>();
 
@@ -84,14 +86,30 @@ public class ARCardSpawner : MonoBehaviour
                 GameObject newPrefab = Instantiate(prefab, trackedImage.transform.position, trackedImage.transform.rotation);
                 spawnedObjects.Add(imageName, newPrefab);
                 Debug.Log("Carta2: " + imageName);
+
+                if (GameManager.Instance != null && !GameManager.Instance.isRoundActive && !combateIniciadoParaEstaCarta)
+                {
+                    combateIniciadoParaEstaCarta = true;
+                    GameManager.Instance.SetPlayerMonster(newPrefab);
+                    MonsterType tipoDetectado = ObtenerTipoPorNombre(imageName);
+                    GameManager.Instance.StartCombatSequence(tipoDetectado);
+                }
             }
             else
             {
                 GameObject spawnedObj = spawnedObjects[imageName];
-                spawnedObj.transform.position = trackedImage.transform.position;
-                spawnedObj.transform.rotation = trackedImage.transform.rotation;
-                spawnedObj.SetActive(isTracking);
-                Debug.Log("Carta3: " + imageName);
+                if (spawnedObj != null)
+                {
+                    spawnedObj.transform.position = trackedImage.transform.position;
+                    spawnedObj.transform.rotation = trackedImage.transform.rotation;
+                    spawnedObj.SetActive(isTracking);
+                    Debug.Log("Carta3: " + imageName);
+                }
+                else
+                {
+                    spawnedObjects.Remove(imageName);
+                    combateIniciadoParaEstaCarta = false;
+                }
             }
         }
     }
@@ -100,5 +118,14 @@ public class ARCardSpawner : MonoBehaviour
     {
         MonsterType = cardtype;
         OnMonsterTypeChanged?.Invoke(cardtype);
+    }
+
+    private MonsterType ObtenerTipoPorNombre(string name)
+    {
+        if (name == "carta") return global::MonsterType.Agua;
+        if (name == "carta 2") return global::MonsterType.Electrico;
+        if (name == "carta 3") return global::MonsterType.Volador;
+        if (name == "carta 4") return global::MonsterType.Planta;
+        return global::MonsterType.Fuego;
     }
 }
