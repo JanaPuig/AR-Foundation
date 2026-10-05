@@ -1,9 +1,7 @@
-using JetBrains.Annotations;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
-using static SerializableCallback.Arg;
 using System;
 
 [RequireComponent(typeof(ARTrackedImageManager))]
@@ -35,9 +33,12 @@ public class ARCardSpawner : MonoBehaviour
         prefabDictionary = new Dictionary<string, GameObject>();
         foreach (var pair in cardPrefabs)
         {
-            if (!prefabDictionary.ContainsKey(pair.imageName))
+            if (!string.IsNullOrEmpty(pair.imageName) && pair.prefabToSpawn != null)
             {
-                prefabDictionary.Add(pair.imageName, pair.prefabToSpawn);
+                if (!prefabDictionary.ContainsKey(pair.imageName))
+                {
+                    prefabDictionary.Add(pair.imageName, pair.prefabToSpawn);
+                }
             }
         }
     }
@@ -97,7 +98,7 @@ public class ARCardSpawner : MonoBehaviour
 
     void SendCardType(string cardtype)
     {
-       MonsterType = cardtype;
-       OnMonsterTypeChanged?.Invoke(cardtype);
+        MonsterType = cardtype;
+        OnMonsterTypeChanged?.Invoke(cardtype);
     }
 }
