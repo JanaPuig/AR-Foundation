@@ -532,6 +532,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1541736850}
+    - targetCorrespondingSourceObject: {fileID: 2512387470528047719, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541736855}
     - targetCorrespondingSourceObject: {fileID: 2512387469002778309, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1065779188}
@@ -776,7 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraToFace: {fileID: 0}
   m_ObjectPrefabs:
-  - {fileID: 3162323501906254835, guid: 53412dc558865e14787a42c43628ce27, type: 3}
+  - {fileID: 5045669527181912581, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
   m_SpawnVisualizationPrefab: {fileID: 0}
   m_SpawnOptionIndex: 0
   m_OnlySpawnInView: 1
@@ -4414,6 +4417,20 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 487441b65d251644b90d40f6e044b70f, type: 2}
   m_MaxNumberOfMovingImages: 1
   m_TrackedImagePrefab: {fileID: 1000111747044350283, guid: 8db0c4019b41a1a4490b83d820aa8728, type: 3}
+--- !u!114 &1541736855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541736845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b6ffe78f3dcd50419141f0c07af0062, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScriptTablero
+  tableroJuegoPrefab: {fileID: 5045669527181912581, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
+  tableroInstanciado: {fileID: 0}
 --- !u!1 &1542672740
 GameObject:
   m_ObjectHideFlags: 0

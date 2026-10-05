@@ -11,6 +11,10 @@ public class GameManager : MonoBehaviour
     public int rondaActual = 1;
     public string nombreEscenaInicio = "PantallaInicio";
 
+    [Header("Puntos del Coliseo")]
+    public Transform puntoCartaPlayer;
+    public Transform puntoCartaMaquina;
+
     [Header("Puntos de Spawn por Defecto")] // De moemnto no hace falta
     public Transform playerSpawnPoint;
     public Transform enemySpawnPoint;
@@ -46,6 +50,19 @@ public class GameManager : MonoBehaviour
         if (textoResultado != null) textoResultado.text = "Escanea una carta";
     }
 
+    void Start()
+    {
+        GameObject coliseoEnEscena = GameObject.Find("Gladiator Low Poly Arena");
+        if (coliseoEnEscena != null)
+        {
+            if (puntoCartaPlayer == null)
+                puntoCartaPlayer = coliseoEnEscena.transform.Find("PuntoCartaPlayer");
+
+            if (puntoCartaMaquina == null)
+                puntoCartaMaquina = coliseoEnEscena.transform.Find("PuntoCartaMáquina");
+        }
+
+    }
     void Update()
     {
 #if UNITY_EDITOR
@@ -72,12 +89,14 @@ public class GameManager : MonoBehaviour
 
     public void StartCombatSequence(MonsterType playerType)
     {
+        if (isRoundActive) return;
+
         isRoundActive = true;
 
         if (textoResultado != null) textoResultado.text = $"[Ronda {rondaActual}] ¡Rival Invocado!...";
 
         MonsterType enemyType = (MonsterType)Random.Range(0, 5);
-        StartCoroutine(EnemyTurnAndResolve(playerType, enemyType));
+        StartCoroutine(EnemyTurnAndResolve(playerType, enemyType, currentPlayerMonster));
     }
 
     public void SetPlayerMonster(GameObject monster)
@@ -89,26 +108,39 @@ public class GameManager : MonoBehaviour
         currentPlayerMonster = monster;
     }
 
-    private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType)
+    private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType, GameObject bichoJugador)
     {
+        if (puntoCartaPlayer != null)
+        {
+            float distancia = Vector3.Distance(bichoJugador.transform.position, puntoCartaPlayer.position);
+            float tolerancia = 0.12f; 
+
+            while (distancia > tolerancia)
+            {
+                if (bichoJugador == null)
+                {
+                    isRoundActive = false;
+                    if (textoResultado != null) textoResultado.text = "Escanea una carta";
+                    yield break;
+                }
+
+                distancia = Vector3.Distance(bichoJugador.transform.position, puntoCartaPlayer.position);
+                yield return null;
+            }
+        }
+
+        if (textoResultado != null)
+            textoResultado.text = $"[Ronda {rondaActual}] ¡El rival acepta el desafío!...";
+
         yield return new WaitForSeconds(1.0f);
 
         Vector3 spawnPosition = Vector3.zero;
         Quaternion spawnRotation = Quaternion.identity;
 
-        //  enemigo a 1.5 metros del jugador
-        if (currentPlayerMonster != null)
+        if (puntoCartaMaquina != null)
         {
-            float distanciaRival = 1.5f;
-            spawnPosition = currentPlayerMonster.transform.position + (currentPlayerMonster.transform.forward * distanciaRival);
-            spawnPosition.y = currentPlayerMonster.transform.position.y;
-
-            Vector3 direccionHaciaPlayer = currentPlayerMonster.transform.position - spawnPosition;
-            direccionHaciaPlayer.y = 0;
-            if (direccionHaciaPlayer != Vector3.zero)
-            {
-                spawnRotation = Quaternion.LookRotation(direccionHaciaPlayer);
-            }
+            spawnPosition = puntoCartaMaquina.position;
+            spawnRotation = puntoCartaMaquina.rotation;
         }
         else if (enemySpawnPoint != null)
         {
@@ -116,25 +148,21 @@ public class GameManager : MonoBehaviour
             spawnRotation = enemySpawnPoint.rotation;
         }
 
-        // Enemigo máquina
         currentEnemyMonster = Instantiate(ObtenerPrefabPorTipo(enemyType), spawnPosition, spawnRotation);
-        Debug.Log($"Enemigo maquina: {enemyType}");
+        Debug.Log($"Enemigo maquina invocado en su zona: {enemyType}");
 
-        if (currentEnemyMonster != null && currentPlayerMonster != null)
+        if (currentEnemyMonster != null && bichoJugador != null)
         {
-            currentEnemyMonster.transform.localScale = currentPlayerMonster.transform.localScale; //Para que sean del mismo tamaño
+            currentEnemyMonster.transform.localScale = bichoJugador.transform.localScale;
         }
 
         if (cartaFisicaPrefab != null)
         {
             currentEnemyCard = Instantiate(cartaFisicaPrefab, spawnPosition, spawnRotation);
 
-            // Buscamos nuestro script CardVisual en ella o en sus hijos
             CardVisual visualCarta = currentEnemyCard.GetComponentInChildren<CardVisual>();
-
             if (visualCarta != null)
             {
-                // Obtenemos la textura adecuada y se la mandamos a la carta
                 Texture2D texturaElegida = ObtenerTexturaPorTipo(enemyType);
                 visualCarta.CambiarTextura(texturaElegida);
             }
@@ -145,6 +173,8 @@ public class GameManager : MonoBehaviour
         RoundResult result = CombatRules.Evaluate(playerType, enemyType);
         StartCoroutine(PlayCombatAnimations(result));
     }
+
+
 
     private IEnumerator PlayCombatAnimations(RoundResult result)
     {
@@ -241,6 +271,9 @@ public class GameManager : MonoBehaviour
     {
         if (currentEnemyCard != null) Destroy(currentEnemyCard);
         if (currentEnemyMonster != null) Destroy(currentEnemyMonster);
+        currentEnemyMonster = null;
+        currentEnemyCard = null;
+
         if (currentPlayerMonster != null && currentPlayerMonster.transform.parent == null)
         {
             Destroy(currentPlayerMonster);
