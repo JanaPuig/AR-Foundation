@@ -1,13 +1,24 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\janaps\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\",
+  "WorkspaceRootPath": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\janaps\\documents\\github\\ar-foundation\\ar foundation\\assets\\assets juego\\cartas\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\assets juego\\cartas\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\janaps\\documents\\github\\ar foundation\\ar foundation\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3F0CE6C-F6CA-F655-E3A6-175C4C337865}|Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.csproj|c:\\users\\janaps\\documents\\github\\ar-foundation\\ar foundation\\assets\\samples\\xr interaction toolkit\\3.3.0\\ar starter assets\\scripts\\arinteractorspawntrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\janaps\\documents\\github\\ar foundation\\ar foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|c:\\users\\janaps\\documents\\github\\ar foundation\\ar foundation\\assets\\scripts\\cardvisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardvisual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\janaps\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Assets juego\\Cartas\\CardLimitController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3F0CE6C-F6CA-F655-E3A6-175C4C337865}|Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.csproj|c:\\users\\janaps\\documents\\github\\ar foundation\\ar foundation\\assets\\samples\\xr interaction toolkit\\3.3.0\\ar starter assets\\scripts\\arinteractorspawntrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3F0CE6C-F6CA-F655-E3A6-175C4C337865}|Unity.XR.Interaction.Toolkit.Samples.ARStarterAssets.csproj|solutionrelative:assets\\samples\\xr interaction toolkit\\3.3.0\\ar starter assets\\scripts\\arinteractorspawntrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -21,34 +32,65 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ARCardSpawner.cs",
+              "DocumentMoniker": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ARCardSpawner.cs",
+              "ToolTip": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ARCardSpawner.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAmwAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T14:46:09.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ARInteractorSpawnTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\janaps\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
-              "ToolTip": "C:\\Users\\janaps\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
-              "RelativeToolTip": "Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
-              "ViewState": "AgIAAKwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CardVisual.cs",
+              "DocumentMoniker": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Scripts\\CardVisual.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CardVisual.cs",
+              "ToolTip": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Scripts\\CardVisual.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CardVisual.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T14:57:41.467Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-05T14:44:50.893Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAALMAAAAAAAAAAAAAAMMAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-05T14:33:32.548Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ARInteractorSpawnTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
+              "ToolTip": "C:\\Users\\janaps\\Documents\\GitHub\\AR Foundation\\AR Foundation\\Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
+              "RelativeToolTip": "Assets\\Samples\\XR Interaction Toolkit\\3.3.0\\AR Starter Assets\\Scripts\\ARInteractorSpawnTrigger.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-01T14:57:41.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "CardLimitController.cs",
               "DocumentMoniker": "C:\\Users\\janaps\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Assets juego\\Cartas\\CardLimitController.cs",
-              "RelativeDocumentMoniker": "Assets\\Assets juego\\Cartas\\CardLimitController.cs",
+              "RelativeDocumentMoniker": "..\\..\\AR-Foundation\\AR Foundation\\Assets\\Assets juego\\Cartas\\CardLimitController.cs",
               "ToolTip": "C:\\Users\\janaps\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Assets juego\\Cartas\\CardLimitController.cs",
-              "RelativeToolTip": "Assets\\Assets juego\\Cartas\\CardLimitController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\AR-Foundation\\AR Foundation\\Assets\\Assets juego\\Cartas\\CardLimitController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T14:41:51.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-01T14:41:51.898Z"
             }
           ]
         }

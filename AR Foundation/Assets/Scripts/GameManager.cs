@@ -18,11 +18,22 @@ public class GameManager : MonoBehaviour
     public GameObject tribalPrefab; 
     public GameObject fishPrefab;
     public GameObject frogPrefab;
-    public GameObject armabeePrefab; 
+    public GameObject armabeePrefab;
+
+    public GameObject cartaFisicaPrefab;
+
+
+    [Header("Imagen Monstruos")]
+    public Texture2D imagenCactoro;
+    public Texture2D imagenTribal;
+    public Texture2D imagenFish;
+    public Texture2D imagenFrog;
+    public Texture2D imagenArmabee;
 
     [HideInInspector] public bool isRoundActive = false;
     private GameObject currentPlayerMonster;
     private GameObject currentEnemyMonster;
+    private GameObject currentEnemyCard;
 
     void Awake()
     {
@@ -109,6 +120,21 @@ public class GameManager : MonoBehaviour
             currentEnemyMonster.transform.localScale = currentPlayerMonster.transform.localScale; //Para que sean del mismo tamaño
         }
 
+        if (cartaFisicaPrefab != null)
+        {
+            currentEnemyCard = Instantiate(cartaFisicaPrefab, spawnPosition, spawnRotation);
+
+            // Buscamos nuestro script CardVisual en ella o en sus hijos
+            CardVisual visualCarta = currentEnemyCard.GetComponentInChildren<CardVisual>();
+
+            if (visualCarta != null)
+            {
+                // Obtenemos la textura adecuada y se la mandamos a la carta
+                Texture2D texturaElegida = ObtenerTexturaPorTipo(enemyType);
+                visualCarta.CambiarTextura(texturaElegida);
+            }
+        }
+
         yield return new WaitForSeconds(1.5f);
 
         RoundResult result = CombatRules.Evaluate(playerType, enemyType);
@@ -165,8 +191,22 @@ public class GameManager : MonoBehaviour
         };
     }
 
+    private Texture2D ObtenerTexturaPorTipo(MonsterType type)
+    {
+        return type switch
+        {
+            MonsterType.Planta => imagenCactoro,
+            MonsterType.Fuego => imagenTribal,
+            MonsterType.Agua => imagenFish,
+            MonsterType.Electrico => imagenFrog,
+            MonsterType.Volador => imagenArmabee,
+            _ => null
+        };
+    }
+
     private void ClearPreviousRound()
     {
+        if (currentEnemyCard != null) Destroy(currentEnemyCard);
         if (currentEnemyMonster != null) Destroy(currentEnemyMonster);
         if (currentPlayerMonster != null && currentPlayerMonster.transform.parent == null)
         {
