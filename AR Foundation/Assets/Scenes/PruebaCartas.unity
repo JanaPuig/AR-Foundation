@@ -119,42 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &9659896
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9659897}
-  m_Layer: 0
-  m_Name: Punto Carta Player
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9659897
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9659896}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.11173829, y: 0.44497302, z: -3.070408}
-  m_LocalScale: {x: 0.24006753, y: 1, z: 0.3042474}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1886853593}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &421690565 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5220238820012332808, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-  m_PrefabInstance: {fileID: 1420490038}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &482616703
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,11 +347,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   rondaActual: 1
   nombreEscenaInicio: PantallaInicio
-  puntoCartaPlayer: {fileID: 1101847082}
-  puntoCartaMaquina: {fileID: 421690565}
+  puntoCartaPlayer: {fileID: 0}
+  puntoCartaMaquina: {fileID: 0}
   playerSpawnPoint: {fileID: 0}
   enemySpawnPoint: {fileID: 0}
   textoResultado: {fileID: 482616704}
+  sonidoVictoria: {fileID: 8300000, guid: f940b03aa0b6f414b887290e78a82b33, type: 3}
+  sonidoDerrota: {fileID: 8300000, guid: 5bf70de2244dfe84b9db8be480f548a4, type: 3}
+  volumenSonidos: 1
   cactoroPrefab: {fileID: 5507953670631434824, guid: 6d69c2e96134d064abfc086666b87a2b, type: 3}
   tribalPrefab: {fileID: 4076361501917307464, guid: 81a8f60a57a40cd46a3434af9f8da1c6, type: 3}
   fishPrefab: {fileID: 6615031470456441530, guid: b5bd8c1512b694b49bb6805c18c206ef, type: 3}
@@ -927,11 +894,6 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
---- !u!4 &1101847082 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5273158206532004017, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-  m_PrefabInstance: {fileID: 1420490038}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1283316546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1052,75 +1014,6 @@ MonoBehaviour:
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
   m_CancelButton: Cancel
---- !u!1001 &1420490038
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5045669527181912581, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_Name
-      value: Gladiator Low Poly Arena
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.012
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.042
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 7906176743698082312, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      insertIndex: 27
-      addedObject: {fileID: 9659897}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7296577599910657693, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
---- !u!4 &1886853593 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5045669527182341669, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-  m_PrefabInstance: {fileID: 1420490038}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1940029101
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,4 +1181,3 @@ SceneRoots:
   - {fileID: 1940029107}
   - {fileID: 993182688}
   - {fileID: 811922115}
-  - {fileID: 1420490038}

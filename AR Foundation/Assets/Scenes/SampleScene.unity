@@ -779,7 +779,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_CameraToFace: {fileID: 0}
   m_ObjectPrefabs:
-  - {fileID: 5045669527181912581, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
+  - {fileID: 5502840713708421706, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
   m_SpawnVisualizationPrefab: {fileID: 0}
   m_SpawnOptionIndex: 0
   m_OnlySpawnInView: 1
@@ -4429,8 +4429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b6ffe78f3dcd50419141f0c07af0062, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScriptTablero
-  tableroJuegoPrefab: {fileID: 5045669527181912581, guid: 410d08a546abcc545a1d2f5827f31697, type: 3}
-  tableroInstanciado: {fileID: 0}
 --- !u!1 &1542672740
 GameObject:
   m_ObjectHideFlags: 0

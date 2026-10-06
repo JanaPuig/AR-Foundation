@@ -22,9 +22,15 @@ public class GameManager : MonoBehaviour
     [Header("UI del Juego")]
     public TextMeshProUGUI textoResultado;
 
+    [Header("Sonidos de ronda")]
+    public AudioClip sonidoVictoria;
+    public AudioClip sonidoDerrota;
+    [Range(0f, 1f)] public float volumenSonidos = 1f;
+    private AudioSource fuenteSonidos;
+
     [Header("Monstruos")]
     public GameObject cactoroPrefab;
-    public GameObject tribalPrefab; 
+    public GameObject tribalPrefab;
     public GameObject fishPrefab;
     public GameObject frogPrefab;
     public GameObject armabeePrefab;
@@ -48,6 +54,10 @@ public class GameManager : MonoBehaviour
     {
         Instance = this;
         if (textoResultado != null) textoResultado.text = "Escanea una carta";
+
+        // Altavoz propio para los sonidos de ronda (no corta la música)
+        fuenteSonidos = gameObject.AddComponent<AudioSource>();
+        fuenteSonidos.playOnAwake = false;
     }
 
     void Start()
@@ -113,7 +123,7 @@ public class GameManager : MonoBehaviour
         if (puntoCartaPlayer != null)
         {
             float distancia = Vector3.Distance(bichoJugador.transform.position, puntoCartaPlayer.position);
-            float tolerancia = 0.12f; 
+            float tolerancia = 0.12f;
 
             while (distancia > tolerancia)
             {
@@ -178,6 +188,12 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator PlayCombatAnimations(RoundResult result)
     {
+        // Sonido de ronda: uno al ganar y otro al perder (en empate no suena nada)
+        if (result == RoundResult.Win && sonidoVictoria != null)
+            fuenteSonidos.PlayOneShot(sonidoVictoria, volumenSonidos);
+        else if (result == RoundResult.Lose && sonidoDerrota != null)
+            fuenteSonidos.PlayOneShot(sonidoDerrota, volumenSonidos);
+
         if (textoResultado != null)
         {
             if (result == RoundResult.Win)
