@@ -7,20 +7,24 @@
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\mobileartemplateassets\\scripts\\goalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\pruebarecibirtipomonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pruebarecibirtipomonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\musicplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\musicplaylist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\pruebarecibirtipomonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pruebarecibirtipomonstruo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\cardlimitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +46,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MusicPlaylist.cs",
+              "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\MusicPlaylist.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MusicPlaylist.cs",
+              "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\MusicPlaylist.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MusicPlaylist.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T18:53:02.852Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "GoalManager.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "RelativeDocumentMoniker": "Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "RelativeToolTip": "Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
-              "ViewState": "AgIAACQBAAAAAAAAAAAUwEkBAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAAwNoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-06T16:37:36.533Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PruebaRecibirTipoMonstruo.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
@@ -63,24 +80,24 @@
               "RelativeToolTip": "Assets\\Scripts\\PruebaRecibirTipoMonstruo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T19:54:16.127Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-04T19:54:16.127Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ARCardSpawner.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ARCardSpawner.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\ARCardSpawner.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T19:28:48.565Z"
+              "WhenOpened": "2026-10-04T19:28:48.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ARCardSpawner.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Assets and prefabs\\TrackedImages\\ARCardSpawner.cs",
@@ -92,15 +109,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "CardLimitController.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CardLimitController.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\CardLimitController.cs",
               "RelativeToolTip": "Assets\\Scripts\\CardLimitController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwBIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-01T21:20:18.069Z"
+              "WhenOpened": "2026-10-01T21:20:18.069Z",
+              "EditorCaption": ""
             }
           ]
         }

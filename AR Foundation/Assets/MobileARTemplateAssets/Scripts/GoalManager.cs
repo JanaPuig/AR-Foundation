@@ -64,7 +64,7 @@ namespace UnityEngine.XR.Templates.AR
             Hints,
 
             /// <summary>
-            /// Show scale and rotate hints
+            /// Show scale hints
             /// </summary>
             Scale
         }
@@ -224,16 +224,15 @@ namespace UnityEngine.XR.Templates.AR
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Hints)
             {
-                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(6f));
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(8f));
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Scale)
             {
-                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(8f));
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(15f));
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.TapSurface)
             {
-                m_SurfacesTapped = 0;
-                m_ObjectSpawner.objectSpawned += OnObjectSpawned;
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(5f));
             }
         }
 
@@ -294,12 +293,10 @@ namespace UnityEngine.XR.Templates.AR
             var tapSurfaceGoal = new Goal(OnboardingGoals.TapSurface);
             var translateHintsGoal = new Goal(OnboardingGoals.Hints);
             var scaleHintsGoal = new Goal(OnboardingGoals.Scale);
-            var rotateHintsGoal = new Goal(OnboardingGoals.Hints);
 
             m_OnboardingGoals.Enqueue(tapSurfaceGoal);
             m_OnboardingGoals.Enqueue(translateHintsGoal);
             m_OnboardingGoals.Enqueue(scaleHintsGoal);
-            m_OnboardingGoals.Enqueue(rotateHintsGoal);
 
             m_CurrentGoal = m_OnboardingGoals.Dequeue();
             m_AllGoalsFinished = false;
