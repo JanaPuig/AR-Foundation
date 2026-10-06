@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.XR.ARFoundation;
 
 public class GameManager : MonoBehaviour
 {
@@ -114,8 +115,18 @@ public class GameManager : MonoBehaviour
 
             if (puntoCartaMaquina == null) Debug.LogWarning("No se encuentra punto del tablero");
 
+            ARPlaneManager planeManager = FindObjectOfType<ARPlaneManager>();
+            if (planeManager != null)
+            {
+                planeManager.enabled = false;
+                foreach (var plane in planeManager.trackables)
+                {
+                    plane.gameObject.SetActive(false);
+                }
+            }
+
             if (textoResultado != null) textoResultado.text = "Tablero colocado. Escanea una carta para comenzar";
-            Debug.Log("Tablero detectado");
+            Debug.Log("Tablero puesto y no maya");
         }
     }
 
