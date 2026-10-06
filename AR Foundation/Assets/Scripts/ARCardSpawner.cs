@@ -27,7 +27,6 @@ public class ARCardSpawner : MonoBehaviour
 
     private bool combateIniciadoParaEstaCarta = false;
 
-void Awake()
     void Awake()
     {
         trackedImageManager = GetComponent<ARTrackedImageManager>();
@@ -130,6 +129,7 @@ void Awake()
     private MonsterType ObtenerTipoPorNombre(string name)
     {
         if (name == "Agua") return global::MonsterType.Agua;
+        if (name == "Electrico") return global::MonsterType.Electrico;
         if (name == "Volador") return global::MonsterType.Volador;
         if (name == "Planta") return global::MonsterType.Planta;
         return global::MonsterType.Fuego;
