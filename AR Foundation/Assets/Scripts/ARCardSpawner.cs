@@ -28,6 +28,7 @@ public class ARCardSpawner : MonoBehaviour
     private bool combateIniciadoParaEstaCarta = false;
 
 void Awake()
+    void Awake()
     {
         trackedImageManager = GetComponent<ARTrackedImageManager>();
 
@@ -73,9 +74,15 @@ void Awake()
 
     void UpdateSpawnedObject(ARTrackedImage trackedImage)
     {
+        if (trackedImage == null || trackedImage.referenceImage == null || string.IsNullOrEmpty(trackedImage.referenceImage.name))
+        {
+            return;
+        }
+
         string imageName = trackedImage.referenceImage.name;
         bool isTracking = trackedImage.trackingState == TrackingState.Tracking;
 
+        // Ahora es 100% seguro usar el diccionario porque imageName nunca ser� null
         if (prefabDictionary.ContainsKey(imageName))
         {
             Debug.Log("Carta: " + imageName);
@@ -122,10 +129,9 @@ void Awake()
 
     private MonsterType ObtenerTipoPorNombre(string name)
     {
-        if (name == "carta") return global::MonsterType.Agua;
-        if (name == "carta 2") return global::MonsterType.Electrico;
-        if (name == "carta 3") return global::MonsterType.Volador;
-        if (name == "carta 4") return global::MonsterType.Planta;
+        if (name == "Agua") return global::MonsterType.Agua;
+        if (name == "Volador") return global::MonsterType.Volador;
+        if (name == "Planta") return global::MonsterType.Planta;
         return global::MonsterType.Fuego;
     }
 }

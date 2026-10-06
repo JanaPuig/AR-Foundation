@@ -18,24 +18,65 @@ public static class CombatRules
 {
     public static RoundResult Evaluate(MonsterType player, MonsterType enemy)
     {
-        if (player == enemy) return RoundResult.Draw;
+        if (player == enemy)
+            return RoundResult.Draw;
 
         switch (player)
         {
             case MonsterType.Planta:
-                return (enemy == MonsterType.Agua || enemy == MonsterType.Electrico) ? RoundResult.Win : RoundResult.Lose;
+
+                if (enemy == MonsterType.Agua || enemy == MonsterType.Volador)
+                {
+                    return RoundResult.Win;
+                }
+                else
+                {
+                    return RoundResult.Lose;
+                }
 
             case MonsterType.Fuego:
-                return (enemy == MonsterType.Planta) ? RoundResult.Win : RoundResult.Lose;
+
+                if (enemy == MonsterType.Planta ||enemy == MonsterType.Electrico)
+                {
+                    return RoundResult.Win;
+                }
+                else
+                {
+                    return RoundResult.Lose;
+                }
 
             case MonsterType.Agua:
-                return (enemy == MonsterType.Fuego) ? RoundResult.Win : RoundResult.Lose;
+
+                if (enemy == MonsterType.Fuego || enemy == MonsterType.Electrico)
+                {
+                    return RoundResult.Win;
+                }
+                else
+                {
+                    return RoundResult.Lose;
+                }
 
             case MonsterType.Electrico:
-                return (enemy == MonsterType.Agua || enemy == MonsterType.Volador) ? RoundResult.Win : RoundResult.Lose;
+
+                if (enemy == MonsterType.Planta || enemy == MonsterType.Volador)
+                {
+                    return RoundResult.Win;
+                }
+                else
+                {
+                    return RoundResult.Lose;
+                }
 
             case MonsterType.Volador:
-                return (enemy == MonsterType.Planta) ? RoundResult.Win : RoundResult.Lose;
+
+                if (enemy == MonsterType.Agua ||enemy == MonsterType.Fuego)
+                {
+                    return RoundResult.Win;
+                }
+                else
+                {
+                    return RoundResult.Lose;
+                }
 
             default:
                 return RoundResult.Draw;

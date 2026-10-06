@@ -133,11 +133,27 @@ public class GameManager : MonoBehaviour
             spawnPosition = puntoCartaMaquina.position;
             spawnRotation = puntoCartaMaquina.rotation;
         }
-        else if (enemySpawnPoint != null)
+        else
         {
-            spawnPosition = enemySpawnPoint.position;
-            spawnRotation = enemySpawnPoint.rotation;
+            if (currentPlayerMonster != null)
+            {
+                float distanciaRival = 1.5f;
+                spawnPosition = currentPlayerMonster.transform.position + (currentPlayerMonster.transform.forward * distanciaRival);
+                spawnPosition.y = currentPlayerMonster.transform.position.y;
+
+                Vector3 direccionHaciaPlayer = currentPlayerMonster.transform.position - spawnPosition;
+                direccionHaciaPlayer.y = 0;
+                if (direccionHaciaPlayer != Vector3.zero)
+                {
+                    spawnRotation = Quaternion.LookRotation(direccionHaciaPlayer);
+                }
+            }
         }
+        //else if (enemySpawnPoint != null)
+        //{
+        //    spawnPosition = enemySpawnPoint.position;
+        //    spawnRotation = enemySpawnPoint.rotation;
+        //}
 
         currentEnemyMonster = Instantiate(ObtenerPrefabPorTipo(enemyType), spawnPosition, spawnRotation);
         Debug.Log($"Enemigo maquina invocado en su zona: {enemyType}");
