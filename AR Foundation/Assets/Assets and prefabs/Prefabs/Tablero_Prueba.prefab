@@ -29,6 +29,7 @@ Transform:
   m_LocalScale: {x: 0.32365888, y: 0.32365888, z: 0.32365888}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 2060047799392372889}
   - {fileID: 8507107605527781896}
   - {fileID: 6797114582323854750}
   - {fileID: 1951976639372385873}
@@ -49,6 +50,37 @@ Transform:
   - {fileID: 5625886293298747901}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!1 &7489517527547151882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2060047799392372889}
+  m_Layer: 0
+  m_Name: "PuntoCartaM\xE1quina"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2060047799392372889
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7489517527547151882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.14, y: 0.297, z: 2.473}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2445477061658586976}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &397667296832554691
 PrefabInstance:
   m_ObjectHideFlags: 0
