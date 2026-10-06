@@ -45,6 +45,7 @@ public class GameManager : MonoBehaviour
     public Texture2D imagenFrog;
     public Texture2D imagenArmabee;
 
+    [HideInInspector] public bool tableroColocado = false;
     [HideInInspector] public bool isRoundActive = false;
     private GameObject currentPlayerMonster;
     private GameObject currentEnemyMonster;
@@ -88,6 +89,15 @@ public class GameManager : MonoBehaviour
             else if (keyboard.digit5Key.wasPressedThisFrame) SpawnPlayerKeyboard(MonsterType.Volador);
         }
 #endif
+    }
+
+    public void RegistrarTablero(GameObject objetoSpawned)
+    {
+        if (objetoSpawned != null)
+        {
+            tableroColocado = true;
+            Debug.Log("Tablero colocado correctamente en la escena.");
+        }
     }
 
     private void SpawnPlayerKeyboard(MonsterType type)

@@ -78,6 +78,13 @@ public class ARCardSpawner : MonoBehaviour
             return;
         }
 
+        if (GameManager.Instance != null && !GameManager.Instance.tableroColocado)
+        {
+            if (GameManager.Instance.textoResultado != null)
+                GameManager.Instance.textoResultado.text = "Coloca el tablero";
+            return;
+        }
+
         string imageName = trackedImage.referenceImage.name;
         bool isTracking = trackedImage.trackingState == TrackingState.Tracking;
 
