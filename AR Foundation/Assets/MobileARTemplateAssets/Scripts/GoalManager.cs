@@ -324,5 +324,10 @@ namespace UnityEngine.XR.Templates.AR
             }
 
         }
+
+        public void QuitApp()
+        {
+            Application.Quit();
+        }
     }
 }
