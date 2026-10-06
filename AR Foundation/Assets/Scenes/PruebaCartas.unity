@@ -348,7 +348,7 @@ MonoBehaviour:
   rondaActual: 1
   nombreEscenaInicio: PantallaInicio
   puntoCartaPlayer: {fileID: 0}
-  puntoCartaMaquina: {fileID: 0}
+  puntoCartaMaquina: {fileID: 1146951748}
   playerSpawnPoint: {fileID: 0}
   enemySpawnPoint: {fileID: 0}
   textoResultado: {fileID: 482616704}
@@ -664,6 +664,66 @@ MonoBehaviour:
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
   m_Version: 2
+--- !u!1001 &982094702
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06444
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.11907
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9999926
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.0038660094
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0.443
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708199530, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5502840713708421706, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      propertyPath: m_Name
+      value: Gladiator Low Poly Arena 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4248158536875650966, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
+  m_SourcePrefab: {fileID: 100100000, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
 --- !u!1 &993182687
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,6 +954,11 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!4 &1146951748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5738062544364715903, guid: ca39bb9f9b8aee547a4408c33d70755d, type: 3}
+  m_PrefabInstance: {fileID: 982094702}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1283316546
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,3 +1246,4 @@ SceneRoots:
   - {fileID: 1940029107}
   - {fileID: 993182688}
   - {fileID: 811922115}
+  - {fileID: 982094702}

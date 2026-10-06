@@ -120,25 +120,6 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType, GameObject bichoJugador)
     {
-        if (puntoCartaPlayer != null)
-        {
-            float distancia = Vector3.Distance(bichoJugador.transform.position, puntoCartaPlayer.position);
-            float tolerancia = 0.12f;
-
-            while (distancia > tolerancia)
-            {
-                if (bichoJugador == null)
-                {
-                    isRoundActive = false;
-                    if (textoResultado != null) textoResultado.text = "Escanea una carta";
-                    yield break;
-                }
-
-                distancia = Vector3.Distance(bichoJugador.transform.position, puntoCartaPlayer.position);
-                yield return null;
-            }
-        }
-
         if (textoResultado != null)
             textoResultado.text = $"[Ronda {rondaActual}] ¡El rival acepta el desafío!...";
 
@@ -178,7 +159,7 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(2.5f);
 
         RoundResult result = CombatRules.Evaluate(playerType, enemyType);
         StartCoroutine(PlayCombatAnimations(result));
