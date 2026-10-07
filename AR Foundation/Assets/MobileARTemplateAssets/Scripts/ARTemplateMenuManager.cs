@@ -30,8 +30,8 @@ namespace UnityEngine.XR.Templates.AR
         {
             m_CanSpawnBoard = enable;
             SetSpawnLocked(!enable);
-            if (m_CreateButton != null)
-                m_CreateButton.gameObject.SetActive(enable && !m_BoardPlaced);
+            if (m_CreateButton != null) { }
+               // m_CreateButton.gameObject.SetActive(enable && !m_BoardPlaced);
         }
 
         //Bloqueo de la colocacion del tablero hasta que acabe el tutorial 
@@ -422,7 +422,7 @@ namespace UnityEngine.XR.Templates.AR
             else
             {
                 m_IsPointerOverUI = false;
-                m_CreateButton.gameObject.SetActive(m_CanSpawnBoard && !m_BoardPlaced);
+                //m_CreateButton.gameObject.SetActive(m_CanSpawnBoard && !m_BoardPlaced);
                 m_DeleteButton.gameObject.SetActive(m_InteractionGroup?.focusInteractable != null);
             }
 

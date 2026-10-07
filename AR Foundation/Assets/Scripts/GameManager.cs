@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
     [Header("UI del Juego")]
     public TextMeshProUGUI textoResultado;
     public GameObject botonContinuar;
+    public TextMeshProUGUI textoRondasGanadas; 
     [Header("Sonidos de ronda")]
     public AudioClip sonidoVictoria;
     public AudioClip sonidoDerrota;
@@ -80,6 +81,8 @@ public class GameManager : MonoBehaviour
         }
         if (botonContinuar != null)
             botonContinuar.SetActive(false);
+
+        textoRondasGanadas.text = "Rondas Ganadas: 0";
 
     }
     void Update()
@@ -230,6 +233,7 @@ public class GameManager : MonoBehaviour
             if (result == RoundResult.Win)
             {
                 textoResultado.text = "<color=green>¡VICTORIA!</color>\nPulsa 'Continuar' para la siguiente ronda.";
+                textoRondasGanadas.text = "Rondas Ganadas: " + rondaActual.ToString();
             }
             else if (result == RoundResult.Lose)
             {
@@ -279,6 +283,7 @@ public class GameManager : MonoBehaviour
         rondaActual = 1;
         isRoundActive = false;
         ActualizarTextoRonda("Escanea una carta");
+        textoRondasGanadas.text = "Rondas Ganadas: 0";
     }
 
     private void ActualizarTextoRonda(string mensajeExtra)
