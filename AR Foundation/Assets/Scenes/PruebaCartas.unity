@@ -1718,6 +1718,11 @@ PrefabInstance:
       propertyPath: m_ObjectSpawner
       value: 
       objectReference: {fileID: 754767382}
+    - target: {fileID: 3306738599984472359, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
+      propertyPath: m_text
+      value: "Welcome to Creature Wars AR\nNow, you\u2019ll see a short tutorial
+        on how to play.\nEnjoy!\n"
+      objectReference: {fileID: 0}
     - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
       propertyPath: m_ObjectSpawner
       value: 
