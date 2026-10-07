@@ -1,5 +1,5 @@
 
-# Creature wars AR
+# Creature Wars AR
 
 Documentación de la actividad 1 AR Foundation
 
@@ -52,7 +52,9 @@ Al acabar el combate aparecerá el mensaje de victoria, derrota o empate. Un rec
 Además del mensaje, el jugador oirá diferentes efectos de sonido cuando gane o pierda.
 
 ## Aspecto innovador
-El juego utiliza 
+El juego podría ser el típico juego de combate por rondas, pero al implementar cartas físicas, de las cuales aparecen monstruos virtuales, mezcladas con elementos virtuales como la zona de enemigos o las interfaces del juego, crea una mezcla original entre juegos de cartas físicos tcg y juegos de combate virtuales.
+
+Además de eso, lleva el típico juego de piedra, papel o tijera, sistema típico triangular en el que uno gana a otro, pero pierde contra el tercero, a un nivel extra al añadir 2 tipos más, pasando a un sistema pentagonal.
 
 ## Resumen del proceso de desarrollo
 dggdgd
@@ -72,10 +74,10 @@ fffff
 ## Contribución de cada miembro del equipo
 | Miembro | Tareas realizadas | 
 | ------------- | ------------- |
-| Arnau Pascual  | - Música y efectos de sonido: selección de los audios e integración en el juego (música en bucle y sonidos de victoria y derrota) <br> - Primeras versiones del tablero y pruebas iniciales, incluida la zona transparente para ver la carta real. <br> - Sistema de combate y gestión de rondas, junto con Jana (participación secundaria). <br> - Colocación del tablero u objeto al tocar la pantalla y adaptación del menú de objetos con su imagen, junto con Jana <br> - inicio Documentación. |
-| Jana Puig  | - Núcleo principal del juego: sistema de combate por tipos y gestión de rondas(responsable principal). <br> - Colocación del tablero u objeto al tocar la pantalla y adaptación del menú de objetos con su imagen, junto con Arnau.  |
-| Claudia Ruiz  | - Buscar assets enemigos junto a Victor <br> - crear tabla de tipos junto a a Victor <br> - Ampliacion a 5 cartas y 5 monstrruos diferentes del escáner de cartas <br> Creacion del tablero enemigo final <br> - correccion de bugs de combate <br> - Unicifacion de las diferentes ramas del proyecto <br> - Correcion de errores al unir diferentes ramas <br> - Activar animaciones de los monstruos al aparecer <br> - Ajustar el tamaño de los monstruos para su visibilidad <br> - Ajustar la posicion del tablero <br> - Crear y ajustar posicion aparicion enemigo al tablero enemigo |
-| Víctor González  | - Idea principal del juego <br> - Buscar assets enemigos junto a Claudia <br> - Crear tabla de tipos junto a Claudia <br> - Priemra iteracion escáner de cartas: reconocimiento de las cartas físicas <br> - Aparición del monstruo sobre la carta escaneada <br> - Turtorial para explicar al jugador como jugar <br> - Toda la interfaz de usuario: pantalla de inicio, instrucciones, contador de rondas, mensajes en pantalla y opción de reinicio. <br> - Documentacion <br> - Readme |
+| Arnau Pascual  | - Música y efectos de sonido: selección de los audios e integración en el juego (música en bucle y sonidos de victoria y derrota) <br> - Primeras versiones del tablero y pruebas iniciales, incluida la zona transparente para ver la carta real. <br> - Sistema de combate y gestión de rondas, junto con Jana (participación secundaria). <br> - Colocación del tablero u objeto al tocar la pantalla y adaptación del menú de objetos con su imagen, junto con Jana <br> - Inicio Documentación |
+| Jana Puig  | - Núcleo principal del juego: sistema de combate por tipos y gestión de rondas(responsable principal). <br> - Colocación del tablero u objeto al tocar la pantalla y adaptación del menú de objetos con su imagen, junto con Arnau. <br> Primera implementación mensaje de victoria/derrota por pantalla  |
+| Claudia Ruiz  | - Buscar assets enemigos junto a Víctor <br> - Crear tabla de tipos junto a Víctor <br> - Ampliación a 5 cartas y 5 monstruos diferentes del escáner de cartas <br>Creación del tablero enemigo final <br> - Corrección de bugs de combate <br> - Unificación de las diferentes ramas del proyecto <br> -  Corrección de errores al unir diferentes ramas <br>- Activar animaciones de los monstruos al aparecer <br> - Ajustar el tamaño de los monstruos para su visibilidad <br> - Ajustar la posición del tablero <br> - Crear y ajustar posición aparición enemigo al tablero enemigo <br> boton pasar siguiente ronda y reiniciar partida |
+| Víctor González  |- Idea principal del juego <br>- Buscar assets enemigos junto a Claudia <br> - Crear tabla de tipos junto a Claudia<br>- Primera iteración escáner de cartas: reconocimiento de las cartas físicas <br> - Aparición del monstruo sobre la carta escaneada <br> - Tutorial para explicar al jugador como jugar <br> - Toda la interfaz de usuario: pantalla de inicio, tutoriales partida, contador de rondas, modificaciones mensajes  fin de partida y boton pasar ronda / reinicio <br>- Documentación <br> - Readme |
 ## Authors
 
 - Víctor González [@TheWolfG145](https://www.github.com/TheWolfG145)
