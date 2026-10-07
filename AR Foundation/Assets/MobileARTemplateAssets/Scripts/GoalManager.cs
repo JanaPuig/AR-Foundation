@@ -248,7 +248,7 @@ namespace UnityEngine.XR.Templates.AR
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Hints)
             {
-                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(7f));
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(6f));
                 
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Scale)
