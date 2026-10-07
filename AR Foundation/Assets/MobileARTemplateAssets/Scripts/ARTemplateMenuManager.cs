@@ -29,8 +29,103 @@ namespace UnityEngine.XR.Templates.AR
         public void EnableBoardPlacement(bool enable)
         {
             m_CanSpawnBoard = enable;
+            SetSpawnLocked(!enable);
             if (m_CreateButton != null)
                 m_CreateButton.gameObject.SetActive(enable && !m_BoardPlaced);
+        }
+
+        //Bloqueo de la colocacion del tablero hasta que acabe el tutorial 
+       
+        enum SpawnLockState { Free, Locked, UnlockPending }
+
+        const float k_SpawnUnlockDelay = 0.3f;
+
+        SpawnLockState m_SpawnLockState = SpawnLockState.Free;
+        Behaviour m_SpawnTrigger;
+        bool m_SpawnTriggerSearched;
+        bool m_SpawnTriggerWasEnabled = true;
+        float m_SpawnUnlockTimer;
+
+        void Awake()
+        {
+            // Bloqueado desde el primer momento
+            SetSpawnLocked(true);
+        }
+
+        Behaviour GetSpawnTrigger()
+        {
+            if (!m_SpawnTriggerSearched)
+            {
+                m_SpawnTriggerSearched = true;
+
+                if (m_ObjectSpawner != null)
+                    m_SpawnTrigger = m_ObjectSpawner.GetComponent("ARInteractorSpawnTrigger") as Behaviour;
+
+                if (m_SpawnTrigger == null)
+                    Debug.LogWarning("ARTemplateMenuManager: no se ha encontrado el ARInteractorSpawnTrigger junto al ObjectSpawner, asi que no se puede bloquear la colocacion del tablero durante el tutorial.", this);
+            }
+
+            return m_SpawnTrigger;
+        }
+
+        void SetSpawnLocked(bool locked)
+        {
+            var trigger = GetSpawnTrigger();
+            if (trigger == null)
+                return;
+
+            if (locked)
+            {
+                
+                if (m_SpawnLockState == SpawnLockState.Free)
+                    m_SpawnTriggerWasEnabled = trigger.enabled;
+
+                m_SpawnLockState = SpawnLockState.Locked;
+                trigger.enabled = false;
+                return;
+            }
+
+            if (m_SpawnLockState == SpawnLockState.Free)
+                return;
+
+            if (!m_SpawnTriggerWasEnabled)
+            {
+                
+                m_SpawnLockState = SpawnLockState.Free;
+                return;
+            }
+
+            if (isActiveAndEnabled)
+            {
+                // Se espera a que el dedo se levante
+              
+                m_SpawnUnlockTimer = 0f;
+                m_SpawnLockState = SpawnLockState.UnlockPending;
+            }
+            else
+            {
+                trigger.enabled = true;
+                m_SpawnLockState = SpawnLockState.Free;
+            }
+        }
+
+        void UpdateSpawnLock()
+        {
+            if (m_SpawnLockState != SpawnLockState.UnlockPending)
+                return;
+
+            var pointer = global::UnityEngine.InputSystem.Pointer.current;
+            if (pointer != null && pointer.press.isPressed)
+                m_SpawnUnlockTimer = 0f;
+            else
+                m_SpawnUnlockTimer += Time.unscaledDeltaTime;
+
+            if (m_SpawnUnlockTimer < k_SpawnUnlockDelay)
+                return;
+
+            m_SpawnLockState = SpawnLockState.Free;
+            if (m_SpawnTrigger != null)
+                m_SpawnTrigger.enabled = true;
         }
 
         public void SetBoardPlaced()
@@ -294,6 +389,8 @@ namespace UnityEngine.XR.Templates.AR
         /// </summary>
         void Update()
         {
+            UpdateSpawnLock();
+
             if (m_InitializingDebugMenu)
             {
                 m_ARDebugMenu.gameObject.SetActive(false);
