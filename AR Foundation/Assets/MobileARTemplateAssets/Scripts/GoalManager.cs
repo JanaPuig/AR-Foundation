@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
+using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
 
 namespace UnityEngine.XR.Templates.AR
@@ -64,7 +65,7 @@ namespace UnityEngine.XR.Templates.AR
             Hints,
 
             /// <summary>
-            /// Show scale and rotate hints
+            /// Show scale hints
             /// </summary>
             Scale
         }
@@ -93,6 +94,14 @@ namespace UnityEngine.XR.Templates.AR
             [SerializeField]
             public bool includeSkipButton;
         }
+
+        [Tooltip("Buscador de superficies")]
+        [SerializeField]
+        ARPlaneManager m_PlaneManager;
+
+        [Tooltip("Lector de imágenes AR")]
+        [SerializeField]
+        ARTrackedImageManager m_TrackedImageManager;
 
         [Tooltip("List of Goals/Steps to complete as part of the user onboarding.")]
         [SerializeField]
@@ -195,8 +204,6 @@ namespace UnityEngine.XR.Templates.AR
 
         void CompleteGoal()
         {
-            if (m_CurrentGoal.CurrentGoal == OnboardingGoals.TapSurface)
-                m_ObjectSpawner.objectSpawned -= OnObjectSpawned;
 
             m_CurrentGoal.Completed = true;
             m_CurrentGoalIndex++;
@@ -210,10 +217,27 @@ namespace UnityEngine.XR.Templates.AR
             {
                 m_StepList[m_CurrentGoalIndex - 1].stepObject.SetActive(false);
                 m_AllGoalsFinished = true;
+                OnTutorialsFinished();
                 return;
             }
 
             PreprocessGoal();
+        }
+
+        void OnTutorialsFinished()
+        {
+            //Activar buscar superficies y leer imagenes
+            if (m_PlaneManager != null) m_PlaneManager.enabled = true;
+            if (m_TrackedImageManager != null) m_TrackedImageManager.enabled = true;
+
+            //Activar tabla tipos  
+            if (m_OptionsButton != null) m_OptionsButton.SetActive(true);
+
+            //Activar el botón de crear para poner el tablero
+            if (m_MenuManager != null)
+            {
+                m_MenuManager.EnableBoardPlacement(true);
+            }
         }
 
         void PreprocessGoal()
@@ -224,16 +248,17 @@ namespace UnityEngine.XR.Templates.AR
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Hints)
             {
-                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(6f));
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(7f));
+                
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.Scale)
             {
-                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(8f));
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(15f));
+
             }
             else if (m_CurrentGoal.CurrentGoal == OnboardingGoals.TapSurface)
             {
-                m_SurfacesTapped = 0;
-                m_ObjectSpawner.objectSpawned += OnObjectSpawned;
+                m_CurrentCoroutine = StartCoroutine(WaitUntilNextCard(5f));
             }
         }
 
@@ -294,21 +319,26 @@ namespace UnityEngine.XR.Templates.AR
             var tapSurfaceGoal = new Goal(OnboardingGoals.TapSurface);
             var translateHintsGoal = new Goal(OnboardingGoals.Hints);
             var scaleHintsGoal = new Goal(OnboardingGoals.Scale);
-            var rotateHintsGoal = new Goal(OnboardingGoals.Hints);
 
             m_OnboardingGoals.Enqueue(tapSurfaceGoal);
             m_OnboardingGoals.Enqueue(translateHintsGoal);
             m_OnboardingGoals.Enqueue(scaleHintsGoal);
-            m_OnboardingGoals.Enqueue(rotateHintsGoal);
 
             m_CurrentGoal = m_OnboardingGoals.Dequeue();
             m_AllGoalsFinished = false;
             m_CurrentGoalIndex = startingStep;
 
             m_GreetingPrompt.SetActive(false);
-            m_OptionsButton.SetActive(true);
-            m_CreateButton.SetActive(true);
+            // m_OptionsButton.SetActive(true);
+            //m_CreateButton.SetActive(true);
+
+            if (m_OptionsButton != null) m_OptionsButton.SetActive(false);
+            if (m_CreateButton != null) m_CreateButton.SetActive(false);
+            if (m_PlaneManager != null) m_PlaneManager.enabled = false;
+            if (m_TrackedImageManager != null) m_TrackedImageManager.enabled = false;
+
             m_MenuManager.enabled = true;
+            m_MenuManager.EnableBoardPlacement(false);
 
             for (int i = startingStep; i < m_StepList.Count; i++)
             {
@@ -323,6 +353,11 @@ namespace UnityEngine.XR.Templates.AR
                 }
             }
 
+        }
+
+        public void QuitApp()
+        {
+            Application.Quit();
         }
     }
 }

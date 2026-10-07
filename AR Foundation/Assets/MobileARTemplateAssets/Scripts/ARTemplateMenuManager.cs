@@ -19,6 +19,28 @@ namespace UnityEngine.XR.Templates.AR
         [Tooltip("Button that opens the create menu.")]
         Button m_CreateButton;
 
+        [SerializeField]
+        GameObject m_OptionsButton;
+
+        bool m_CanSpawnBoard = false;
+        bool m_BoardPlaced = false;
+
+
+        public void EnableBoardPlacement(bool enable)
+        {
+            m_CanSpawnBoard = enable;
+            if (m_CreateButton != null)
+                m_CreateButton.gameObject.SetActive(enable && !m_BoardPlaced);
+        }
+
+        public void SetBoardPlaced()
+        {
+            m_BoardPlaced = true;
+            m_CanSpawnBoard = false;
+            if (m_CreateButton != null)
+                m_CreateButton.gameObject.SetActive(false);
+        }
+
         /// <summary>
         /// Button that opens the create menu.
         /// </summary>
@@ -303,7 +325,7 @@ namespace UnityEngine.XR.Templates.AR
             else
             {
                 m_IsPointerOverUI = false;
-                m_CreateButton.gameObject.SetActive(true);
+                m_CreateButton.gameObject.SetActive(m_CanSpawnBoard && !m_BoardPlaced);
                 m_DeleteButton.gameObject.SetActive(m_InteractionGroup?.focusInteractable != null);
             }
 
