@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
 
     [Header("UI del Juego")]
     public TextMeshProUGUI textoResultado;
-
+    public GameObject botonContinuar;
     [Header("Sonidos de ronda")]
     public AudioClip sonidoVictoria;
     public AudioClip sonidoDerrota;
@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+
         GameObject coliseoEnEscena = GameObject.Find("Gladiator Low Poly Arena");
         if (coliseoEnEscena != null)
         {
@@ -77,6 +78,8 @@ public class GameManager : MonoBehaviour
             if (puntoCartaMaquina == null)
                 puntoCartaMaquina = coliseoEnEscena.transform.Find("PuntoCartaMáquina");
         }
+        if (botonContinuar != null)
+            botonContinuar.SetActive(false);
 
     }
     void Update()
@@ -161,57 +164,57 @@ public class GameManager : MonoBehaviour
         currentPlayerMonster = monster;
     }
 
-   private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType, GameObject bichoJugador)
-{
-    if (textoResultado != null)
-        textoResultado.text = $"[Ronda {rondaActual}] ¡El rival acepta el desafío!...";
-
-    yield return new WaitForSeconds(1.0f);
-
-    Vector3 spawnPosition = Vector3.zero;
-    Quaternion spawnRotation = Quaternion.identity;
-
-    if (puntoCartaMaquina != null)
+    private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType, GameObject bichoJugador)
     {
-        spawnPosition = puntoCartaMaquina.position;
-        spawnRotation = puntoCartaMaquina.rotation;
-    }
-    else
-    {
-        Debug.LogWarning("No se encontró el 'PuntoCartaMáquina' en el tablero. Usando posición de respaldo.");
-        if (currentPlayerMonster != null)
+        if (textoResultado != null)
+            textoResultado.text = $"[Ronda {rondaActual}] ¡El rival acepta el desafío!...";
+
+        yield return new WaitForSeconds(1.0f);
+
+        Vector3 spawnPosition = Vector3.zero;
+        Quaternion spawnRotation = Quaternion.identity;
+
+        if (puntoCartaMaquina != null)
         {
-            float distanciaRival = 1.5f;
-            spawnPosition = currentPlayerMonster.transform.position + (currentPlayerMonster.transform.forward * distanciaRival);
-            spawnPosition.y = currentPlayerMonster.transform.position.y;
-
-            Vector3 direccionHaciaPlayer = currentPlayerMonster.transform.position - spawnPosition;
-            direccionHaciaPlayer.y = 0;
-            if (direccionHaciaPlayer != Vector3.zero)
+            spawnPosition = puntoCartaMaquina.position;
+            spawnRotation = puntoCartaMaquina.rotation;
+        }
+        else
+        {
+            Debug.LogWarning("No se encontró el 'PuntoCartaMáquina' en el tablero. Usando posición de respaldo.");
+            if (currentPlayerMonster != null)
             {
-                spawnRotation = Quaternion.LookRotation(direccionHaciaPlayer);
+                float distanciaRival = 1.5f;
+                spawnPosition = currentPlayerMonster.transform.position + (currentPlayerMonster.transform.forward * distanciaRival);
+                spawnPosition.y = currentPlayerMonster.transform.position.y;
+
+                Vector3 direccionHaciaPlayer = currentPlayerMonster.transform.position - spawnPosition;
+                direccionHaciaPlayer.y = 0;
+                if (direccionHaciaPlayer != Vector3.zero)
+                {
+                    spawnRotation = Quaternion.LookRotation(direccionHaciaPlayer);
+                }
             }
         }
+
+        currentEnemyMonster = Instantiate(ObtenerPrefabPorTipo(enemyType), spawnPosition, spawnRotation);
+        Debug.Log($"Monstruo de la máquina invocado: {enemyType}");
+
+        if (tableroInstanciado != null)
+        {
+            currentEnemyMonster.transform.SetParent(tableroInstanciado.transform, true);
+        }
+
+        if (currentEnemyMonster != null && bichoJugador != null)
+        {
+            currentEnemyMonster.transform.localScale = bichoJugador.transform.localScale;
+        }
+
+        yield return new WaitForSeconds(2.5f);
+
+        RoundResult result = CombatRules.Evaluate(playerType, enemyType);
+        StartCoroutine(PlayCombatAnimations(result));
     }
-
-    currentEnemyMonster = Instantiate(ObtenerPrefabPorTipo(enemyType), spawnPosition, spawnRotation);
-    Debug.Log($"Monstruo de la máquina invocado: {enemyType}");
-
-    if (tableroInstanciado != null)
-    {
-        currentEnemyMonster.transform.SetParent(tableroInstanciado.transform, true);
-    }
-
-    if (currentEnemyMonster != null && bichoJugador != null)
-    {
-        currentEnemyMonster.transform.localScale = bichoJugador.transform.localScale;
-    }
-
-    yield return new WaitForSeconds(2.5f);
-
-    RoundResult result = CombatRules.Evaluate(playerType, enemyType);
-    StartCoroutine(PlayCombatAnimations(result));
-}
 
 
     private IEnumerator PlayCombatAnimations(RoundResult result)
@@ -239,12 +242,21 @@ public class GameManager : MonoBehaviour
             }
         }
 
+        if (botonContinuar != null)
+            botonContinuar.SetActive(true);
+
         esperandoBotonContinuar = true;
         yield return new WaitUntil(() => !esperandoBotonContinuar);
+
+
+        if (botonContinuar != null)
+            botonContinuar.SetActive(false);
     }
 
     private void VolverAlInicio()
     {
+        if (botonContinuar != null)
+            botonContinuar.SetActive(false);
         ClearPreviousRound();
         rondaActual = 1;
         isRoundActive = false;
