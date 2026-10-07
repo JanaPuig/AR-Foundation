@@ -170,7 +170,7 @@ public class GameManager : MonoBehaviour
     private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType, GameObject bichoJugador)
     {
         if (textoResultado != null)
-            textoResultado.text = $"[Ronda {rondaActual}] ¡El rival acepta el desafío!...";
+            textoResultado.text = $"¡El rival acepta el desafío!";
 
         yield return new WaitForSeconds(1.0f);
 
@@ -232,13 +232,13 @@ public class GameManager : MonoBehaviour
         {
             if (result == RoundResult.Win)
             {
-                textoResultado.text = "<color=green>¡VICTORIA!</color>\nPulsa 'Continuar' para la siguiente ronda.";
+                textoResultado.text = "<color=green>¡VICTORIA!</color>\n Retira la carta y pulsa 'Continuar' para la siguiente ronda.";
                 textoRondasGanadas.text = "Rondas Ganadas: " + rondaActual.ToString();
             }
             else if (result == RoundResult.Lose)
             {
                 int rondasSuperadas = rondaActual - 1;
-                textoResultado.text = $"<color=red>¡GAME OVER!</color>\nHas superado {rondasSuperadas} rondas consecutivas.\nPulsa 'Continuar' para volver al inicio.";
+                textoResultado.text = $"<color=red>¡GAME OVER!</color>\nHas superado {rondasSuperadas} rondas consecutivas.\nPulsa 'Continuar' para reiniciar.";
             }
             else
             {

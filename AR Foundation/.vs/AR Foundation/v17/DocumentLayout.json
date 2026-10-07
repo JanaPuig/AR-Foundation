@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\mobileartemplateassets\\scripts\\goalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\mobileartemplateassets\\scripts\\goalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,7 +45,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,26 +57,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ARTemplateMenuManager.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
               "RelativeToolTip": "Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCEAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAowCEAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T20:53:00.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameManager.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwB0BAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPQAAABxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T10:28:41.765Z",
               "EditorCaption": ""
@@ -89,7 +89,7 @@
               "RelativeDocumentMoniker": "Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "RelativeToolTip": "Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
-              "ViewState": "AgIAANEAAAAAAAAAAAAswO8AAABLAAAAAAAAAA==",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAkwPIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T15:40:36.175Z",
               "EditorCaption": ""

@@ -240,7 +240,7 @@ namespace UnityEngine.XR.Templates.AR
             //if (m_OptionsButton != null) m_OptionsButton.SetActive(true);
 
             //Activar canva y boton partida
-            if (botonContinuar != null) botonContinuar.SetActive(true);
+           // if (botonContinuar != null) botonContinuar.SetActive(true);
             if (textoRondasGanadas  != null) textoRondasGanadas.gameObject.SetActive(true);
             if (textoResultado != null) textoResultado.gameObject.SetActive(true);
 
