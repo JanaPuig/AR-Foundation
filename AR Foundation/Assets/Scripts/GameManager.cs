@@ -248,15 +248,33 @@ public class GameManager : MonoBehaviour
         esperandoBotonContinuar = true;
         yield return new WaitUntil(() => !esperandoBotonContinuar);
 
-
         if (botonContinuar != null)
             botonContinuar.SetActive(false);
+
+        if (result == RoundResult.Win)
+        {
+            rondaActual++;
+            ActualizarTextoRonda("Escanea tu siguiente carta...");
+            ClearPreviousRound();
+            isRoundActive = false;
+        }
+        else if (result == RoundResult.Lose)
+        {
+            VolverAlInicio();
+        }
+        else 
+        {
+            ActualizarTextoRonda("Vuelve a escanear tu carta...");
+            ClearPreviousRound();
+            isRoundActive = false;
+        }
     }
 
     private void VolverAlInicio()
     {
         if (botonContinuar != null)
             botonContinuar.SetActive(false);
+
         ClearPreviousRound();
         rondaActual = 1;
         isRoundActive = false;
