@@ -53,6 +53,9 @@ public class GameManager : MonoBehaviour
     private GameObject currentEnemyMonster;
     private GameObject currentEnemyCard;
 
+    private bool esperandoBotonContinuar = false;
+
+
     void Awake()
     {
         Instance = this;
@@ -223,40 +226,21 @@ public class GameManager : MonoBehaviour
         {
             if (result == RoundResult.Win)
             {
-                textoResultado.text = "<color=green>¡VICTORIA!</color>";
-                yield return new WaitForSeconds(3.0f);
-
-                rondaActual++;
-                textoResultado.text = $"<color=yellow>¡Avanzas a la Ronda {rondaActual}!</color>";
-                yield return new WaitForSeconds(2.0f);
-
-                ActualizarTextoRonda("Escanea tu siguiente carta...");
-                ClearPreviousRound();
-                isRoundActive = false;
+                textoResultado.text = "<color=green>¡VICTORIA!</color>\nPulsa 'Continuar' para la siguiente ronda.";
             }
             else if (result == RoundResult.Lose)
             {
                 int rondasSuperadas = rondaActual - 1;
-                textoResultado.text = $"<color=red>¡GAME OVER!</color>\nHas superado {rondasSuperadas} rondas consecutivas.";
-                yield return new WaitForSeconds(5.0f);
-
-                textoResultado.text = "Volviendo a la pantalla de inicio...";
-                yield return new WaitForSeconds(3.0f);
-                VolverAlInicio();
+                textoResultado.text = $"<color=red>¡GAME OVER!</color>\nHas superado {rondasSuperadas} rondas consecutivas.\nPulsa 'Continuar' para volver al inicio.";
             }
             else
             {
-                textoResultado.text = "<color=yellow>¡EMPATE!</color>\nInténtalo de nuevo.";
-                yield return new WaitForSeconds(3.0f);
-                ActualizarTextoRonda("Vuelve a escanear tu carta...");
-                ClearPreviousRound();
-                isRoundActive = false;
+                textoResultado.text = "<color=yellow>¡EMPATE!</color>\nPulsa 'Continuar' para repetir la ronda.";
             }
-
         }
 
-        //ClearPreviousRound();
-        //isRoundActive = false;
+        esperandoBotonContinuar = true;
+        yield return new WaitUntil(() => !esperandoBotonContinuar);
     }
 
     private void VolverAlInicio()
@@ -318,6 +302,14 @@ public class GameManager : MonoBehaviour
         if (currentPlayerMonster != null && currentPlayerMonster.transform.parent == null)
         {
             Destroy(currentPlayerMonster);
+        }
+    }
+
+    public void OnBotonContinuarPressed()
+    {
+        if (esperandoBotonContinuar)
+        {
+            esperandoBotonContinuar = false;
         }
     }
 }
