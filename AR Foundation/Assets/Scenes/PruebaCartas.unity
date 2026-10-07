@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3134600
 RectTransform:
   m_ObjectHideFlags: 0
@@ -414,7 +414,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &482616704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1735,6 +1735,14 @@ PrefabInstance:
       value: "Welcome to Creature Wars AR\nNow, you\u2019ll see a short tutorial
         on how to play.\nEnjoy!\n"
       objectReference: {fileID: 0}
+    - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
+      propertyPath: botonContinuar
+      value: 
+      objectReference: {fileID: 3134599}
+    - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
+      propertyPath: textoResultado
+      value: 
+      objectReference: {fileID: 482616704}
     - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
       propertyPath: m_ObjectSpawner
       value: 

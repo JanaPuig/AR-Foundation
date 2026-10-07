@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.Interaction.Toolkit.Samples.StarterAssets;
@@ -102,6 +103,10 @@ namespace UnityEngine.XR.Templates.AR
         [Tooltip("Lector de imágenes AR")]
         [SerializeField]
         ARTrackedImageManager m_TrackedImageManager;
+
+        [Header("UI del Juego")]
+        public TextMeshProUGUI textoResultado;
+        public GameObject botonContinuar;
 
         [Tooltip("List of Goals/Steps to complete as part of the user onboarding.")]
         [SerializeField]
@@ -233,6 +238,10 @@ namespace UnityEngine.XR.Templates.AR
             //Activar tabla tipos  
             if (m_OptionsButton != null) m_OptionsButton.SetActive(true);
 
+            //Activar canva y boton partida
+            if (botonContinuar != null) botonContinuar.SetActive(true);
+            if (textoResultado != null) textoResultado.gameObject.SetActive(true);
+
             //Activar el botón de crear para poner el tablero
             if (m_MenuManager != null)
             {
@@ -334,6 +343,8 @@ namespace UnityEngine.XR.Templates.AR
 
             if (m_OptionsButton != null) m_OptionsButton.SetActive(false);
             if (m_CreateButton != null) m_CreateButton.SetActive(false);
+            if (botonContinuar != null) botonContinuar.SetActive(false);
+            if (textoResultado != null) textoResultado.gameObject.SetActive(false);
             if (m_PlaneManager != null) m_PlaneManager.enabled = false;
             if (m_TrackedImageManager != null) m_TrackedImageManager.enabled = false;
 
