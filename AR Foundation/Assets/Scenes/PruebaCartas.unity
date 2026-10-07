@@ -846,6 +846,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &850786349 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2512387470528047737, guid: 48cb3fb68c91eb94999fd99957eb0cae, type: 3}
+  m_PrefabInstance: {fileID: 1911666195}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911666196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &986361373
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,7 +1875,7 @@ PrefabInstance:
     - target: {fileID: 3227751454694144447, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
       propertyPath: m_PlaneManager
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 850786349}
     - target: {fileID: 3227751454694144447, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
       propertyPath: m_ObjectSpawner
       value: 
@@ -1883,6 +1894,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 3134599}
     - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
+      propertyPath: m_PlaneManager
+      value: 
+      objectReference: {fileID: 850786349}
+    - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
       propertyPath: textoResultado
       value: 
       objectReference: {fileID: 482616704}
@@ -1890,6 +1905,14 @@ PrefabInstance:
       propertyPath: m_ObjectSpawner
       value: 
       objectReference: {fileID: 754767382}
+    - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
+      propertyPath: textoRondasGanadas
+      value: 
+      objectReference: {fileID: 1920813675}
+    - target: {fileID: 5475136805573253589, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
+      propertyPath: m_TrackedImageManager
+      value: 
+      objectReference: {fileID: 1911666202}
     - target: {fileID: 5479725241131998714, guid: 14f4ec7fc65ad5a40b4a3e8c8809ff25, type: 3}
       propertyPath: m_SizeDelta.x
       value: 674.942
