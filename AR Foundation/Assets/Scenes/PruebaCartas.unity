@@ -812,6 +812,7 @@ MonoBehaviour:
   playerSpawnPoint: {fileID: 0}
   enemySpawnPoint: {fileID: 0}
   textoResultado: {fileID: 482616704}
+  botonContinuar: {fileID: 3134599}
   sonidoVictoria: {fileID: 8300000, guid: f940b03aa0b6f414b887290e78a82b33, type: 3}
   sonidoDerrota: {fileID: 8300000, guid: 5bf70de2244dfe84b9db8be480f548a4, type: 3}
   volumenSonidos: 1
