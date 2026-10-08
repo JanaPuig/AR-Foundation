@@ -81,7 +81,7 @@ public class ARCardSpawner : MonoBehaviour
         if (GameManager.Instance != null && !GameManager.Instance.tableroColocado)
         {
             if (GameManager.Instance.textoResultado != null)
-                GameManager.Instance.textoResultado.text = "Coloca el tablero";
+                GameManager.Instance.textoResultado.text = "Place the board";
             return;
         }
 
@@ -98,7 +98,6 @@ public class ARCardSpawner : MonoBehaviour
                 GameObject prefab = prefabDictionary[imageName];
                 GameObject newPrefab = Instantiate(prefab, trackedImage.transform.position, trackedImage.transform.rotation);
                 spawnedObjects.Add(imageName, newPrefab);
-                Debug.Log("Carta2: " + imageName);
 
                 if (GameManager.Instance != null && !GameManager.Instance.isRoundActive && !combateIniciadoParaEstaCarta)
                 {
@@ -116,7 +115,6 @@ public class ARCardSpawner : MonoBehaviour
                     spawnedObj.transform.position = trackedImage.transform.position;
                     spawnedObj.transform.rotation = trackedImage.transform.rotation;
                     spawnedObj.SetActive(isTracking);
-                    Debug.Log("Carta3: " + imageName);
                 }
                 else
                 {

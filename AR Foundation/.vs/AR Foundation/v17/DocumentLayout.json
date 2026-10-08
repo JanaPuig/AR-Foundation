@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\mobileartemplateassets\\scripts\\goalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\mobileartemplateassets\\scripts\\goalmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|b:\\clase\\4rt\\vr\\ar-foundation\\ar foundation\\assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\mobileartemplateassets\\scripts\\artemplatemenumanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{974154CB-7A99-4E8D-BAA2-DE47346FA9ED}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\arcardspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Usuari\\Documents\\GitHub\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ScriptTablero.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -57,13 +57,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ARTemplateMenuManager.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
               "RelativeDocumentMoniker": "Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
               "RelativeToolTip": "Assets\\MobileARTemplateAssets\\Scripts\\ARTemplateMenuManager.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowCEAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAANMCAAAAAAAAAAAIwCQAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T20:53:00.628Z",
               "EditorCaption": ""
@@ -76,20 +76,20 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\GameManager.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAPQAAABxAAAAAAAAAA==",
+              "ViewState": "AgIAAL4AAAAAAAAAAAAwwNYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-05T10:28:41.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "GoalManager.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "RelativeDocumentMoniker": "Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
               "RelativeToolTip": "Assets\\MobileARTemplateAssets\\Scripts\\GoalManager.cs",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAkwPIAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAEABAAAAAAAAAAAUwFkBAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-07T15:40:36.175Z",
               "EditorCaption": ""
@@ -130,15 +130,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ARCardSpawner.cs",
               "DocumentMoniker": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\ARCardSpawner.cs",
               "ToolTip": "B:\\Clase\\4rt\\vr\\AR-Foundation\\AR Foundation\\Assets\\Scripts\\ARCardSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\ARCardSpawner.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAADgvx0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAcwFMAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-04T19:28:48.565Z"
+              "WhenOpened": "2026-10-04T19:28:48.565Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

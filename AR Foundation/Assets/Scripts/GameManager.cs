@@ -60,7 +60,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        if (textoResultado != null) textoResultado.text = "Escanea una carta";
+        if (textoResultado != null) textoResultado.text = "Scan a card";
 
         // Altavoz propio para los sonidos de ronda (no corta la música)
         fuenteSonidos = gameObject.AddComponent<AudioSource>();
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         if (botonContinuar != null)
             botonContinuar.SetActive(false);
 
-        textoRondasGanadas.text = "Rondas Ganadas: 0";
+        textoRondasGanadas.text = "Rounds Won: 0";
 
     }
     void Update()
@@ -134,7 +134,7 @@ public class GameManager : MonoBehaviour
                 }
             }
 
-            if (textoResultado != null) textoResultado.text = "Tablero colocado. Escanea una carta para comenzar";
+            if (textoResultado != null) textoResultado.text = "Board set. Scan a card to begin";
             Debug.Log("Tablero puesto y no maya");
         }
     }
@@ -152,7 +152,7 @@ public class GameManager : MonoBehaviour
 
         isRoundActive = true;
 
-        if (textoResultado != null) textoResultado.text = $"[Ronda {rondaActual}] ¡Rival Invocado!...";
+       if (textoResultado != null) textoResultado.text = $"Rival Summoned!";
 
         MonsterType enemyType = (MonsterType)Random.Range(0, 5);
         StartCoroutine(EnemyTurnAndResolve(playerType, enemyType, currentPlayerMonster));
@@ -169,8 +169,7 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator EnemyTurnAndResolve(MonsterType playerType, MonsterType enemyType, GameObject bichoJugador)
     {
-        if (textoResultado != null)
-            textoResultado.text = $"¡El rival acepta el desafío!";
+      
 
         yield return new WaitForSeconds(1.0f);
 
@@ -213,6 +212,7 @@ public class GameManager : MonoBehaviour
             currentEnemyMonster.transform.localScale = bichoJugador.transform.localScale;
         }
 
+        if (textoResultado != null) textoResultado.text = $" ";
         yield return new WaitForSeconds(2.5f);
 
         RoundResult result = CombatRules.Evaluate(playerType, enemyType);
@@ -232,17 +232,17 @@ public class GameManager : MonoBehaviour
         {
             if (result == RoundResult.Win)
             {
-                textoResultado.text = "<color=green>¡VICTORIA!</color>\n Retira la carta y pulsa 'Continuar' para la siguiente ronda.";
-                textoRondasGanadas.text = "Rondas Ganadas: " + rondaActual.ToString();
+                textoResultado.text = "<color=green>¡VICTORY!</color>\n Discard the card and click “Continue” to move on to the next round.";
+                textoRondasGanadas.text = "Rounds Won: " + rondaActual.ToString();
             }
             else if (result == RoundResult.Lose)
             {
                 int rondasSuperadas = rondaActual - 1;
-                textoResultado.text = $"<color=red>¡GAME OVER!</color>\nHas superado {rondasSuperadas} rondas consecutivas.\nPulsa 'Continuar' para reiniciar.";
+                textoResultado.text = $"<color=red>¡GAME OVER!</color>\n {rondasSuperadas} Rounds completed.\n Click “Continue” to restart.";
             }
             else
             {
-                textoResultado.text = "<color=yellow>¡EMPATE!</color>\nPulsa 'Continuar' para repetir la ronda.";
+                textoResultado.text = "<color=yellow>¡TIE!</color>\n Click “Continue” to repeat the round.";
             }
         }
 
@@ -258,7 +258,7 @@ public class GameManager : MonoBehaviour
         if (result == RoundResult.Win)
         {
             rondaActual++;
-            ActualizarTextoRonda("Escanea tu siguiente carta...");
+            ActualizarTextoRonda("Scan your next card");
             ClearPreviousRound();
             isRoundActive = false;
         }
@@ -268,7 +268,7 @@ public class GameManager : MonoBehaviour
         }
         else 
         {
-            ActualizarTextoRonda("Vuelve a escanear tu carta...");
+            ActualizarTextoRonda("Scan your card again");
             ClearPreviousRound();
             isRoundActive = false;
         }
@@ -282,14 +282,14 @@ public class GameManager : MonoBehaviour
         ClearPreviousRound();
         rondaActual = 1;
         isRoundActive = false;
-        ActualizarTextoRonda("Escanea una carta");
-        textoRondasGanadas.text = "Rondas Ganadas: 0";
+        ActualizarTextoRonda("Scan a card");
+        textoRondasGanadas.text = "Rounds Won: 0";
     }
 
     private void ActualizarTextoRonda(string mensajeExtra)
     {
         if (textoResultado != null)
-            textoResultado.text = $"<b>[RONDA {rondaActual}]</b>\n{mensajeExtra}";
+            textoResultado.text = $"<b>[Round {rondaActual}]</b>\n{mensajeExtra}";
     }
     private GameObject SpawnMonster(MonsterType type, Transform spawnPoint)
     {
@@ -310,19 +310,6 @@ public class GameManager : MonoBehaviour
             MonsterType.Agua => fishPrefab,
             MonsterType.Electrico => frogPrefab,
             MonsterType.Volador => armabeePrefab,
-            _ => null
-        };
-    }
-
-    private Texture2D ObtenerTexturaPorTipo(MonsterType type)
-    {
-        return type switch
-        {
-            MonsterType.Planta => imagenCactoro,
-            MonsterType.Fuego => imagenTribal,
-            MonsterType.Agua => imagenFish,
-            MonsterType.Electrico => imagenFrog,
-            MonsterType.Volador => imagenArmabee,
             _ => null
         };
     }
