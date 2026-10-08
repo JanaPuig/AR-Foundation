@@ -56,11 +56,16 @@ public class GameManager : MonoBehaviour
 
     private bool esperandoBotonContinuar = false;
 
+    ARTrackedImageManager m_TrackedImageManager;
+    ARPlaneManager m_PlaneManager;
+
 
     void Awake()
     {
         Instance = this;
-        if (textoResultado != null) textoResultado.text = "Scan a card";
+       if (textoResultado != null) textoResultado.text = " ";
+        if (m_PlaneManager != null) m_PlaneManager.enabled = true;
+        if (m_TrackedImageManager != null) m_TrackedImageManager.enabled = true;
 
         // Altavoz propio para los sonidos de ronda (no corta la música)
         fuenteSonidos = gameObject.AddComponent<AudioSource>();
@@ -283,6 +288,7 @@ public class GameManager : MonoBehaviour
         rondaActual = 1;
         isRoundActive = false;
         ActualizarTextoRonda("Scan a card");
+        Debug.Log("roto1");
         textoRondasGanadas.text = "Rounds Won: 0";
     }
 
